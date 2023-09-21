@@ -245,7 +245,7 @@ section {
 }
 
 .header.sticked {
-  background: rgba(27, 47, 69, 0.9);
+  background: rgba(251, 251, 251, 0.875);
   padding: 12px 0;
 }
 
@@ -291,7 +291,7 @@ section {
     font-family: var(--font-default);
     font-size: 15px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.6);
+    color: #3a3a3a;
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -307,7 +307,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: #db0e0e;
   }
 
   .navbar .dropdown ul {
@@ -320,7 +320,7 @@ section {
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: #fff;
+    background: #ffffff;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     transition: 0.2s;
   }
@@ -343,7 +343,7 @@ section {
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
   .navbar .dropdown ul li:hover>a {
-    color: var(--color-primary);
+    color: #db0e0e;
   }
 
   .navbar .dropdown:hover>ul {
@@ -419,13 +419,14 @@ section {
     font-family: var(--font-default);
     font-size: 15px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.7);
+    color: #3a3a3a;
     white-space: nowrap;
     transition: 0.3s;
   }
 
   .navbar a i,
   .navbar a:focus i {
+
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;

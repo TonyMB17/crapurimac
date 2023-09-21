@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Nova Bootstrap Template - Index</title>
+  <title>CRAA - Comisión Regional Anticorrupción de Apurímac</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -59,8 +59,8 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="d-flex align-items-center">Nova</h1>
+        <img src="assets/img/LOGO.png" alt="">
+        <!-- <h1 class="d-flex align-items-center">Nova</h1> -->
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -68,11 +68,26 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="team.html">Team</a></li>
+          <li><a href="index.html" class="active">INICIO</a></li>
+          <li class="dropdown"><a href="#"><span>QUIÉNES SOMOS</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">PRESENTACIÓN</a></li>
+              <li><a href="#">OBJESTIVOS Y FUNCIONES</a></li>
+              <li><a href="#">MIEMBROS</a></li>
+              <li><a href="#">LOCALES INSTITUCIONALES</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>DOCUMENTOS</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">PLAN ANUAL DE TRABAJO</a></li>
+              <li><a href="#">MARCO NORVATIVO</a></li>
+              <li><a href="#">ACTAS</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">NOTICIAS</a></li>
+          <li><a href="services.html">DENUNCIA</a></li>
+          <li><a href="portfolio.html">CONTACTO</a></li>
+          <!-- <li><a href="team.html">Team</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
@@ -91,7 +106,7 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li> -->
         </ul>
       </nav><!-- .navbar -->
 
