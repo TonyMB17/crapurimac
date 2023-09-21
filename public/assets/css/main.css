@@ -495,7 +495,7 @@ section {
 .hero {
   width: 100%;
   min-height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/CRAC-Inicio.jpeg") top center;
   background-size: cover;
   position: relative;
   padding: 120px 0;
@@ -506,8 +506,8 @@ section {
   .hero:after {
     position: absolute;
     content: "";
-    width: 40%;
-    background: var(--color-secondary);
+    width: 45%;
+    background: white;
     top: 0;
     bottom: 0;
   }
@@ -546,9 +546,9 @@ section {
 }
 
 .hero blockquote {
-  color: #fff;
+  color: #3a3a3a;
   padding-left: 20px;
-  font-size: 15px;
+  font-size: 30px;
   font-family: var(--font-default);
   border-left: 2px solid var(--color-primary);
   margin: 40px 0;
@@ -564,7 +564,7 @@ section {
   border-radius: 50px;
   transition: 0.5s;
   color: #fff;
-  background: var(--color-primary);
+  background: #CC1420;
 }
 
 .hero .btn-get-started:hover {
