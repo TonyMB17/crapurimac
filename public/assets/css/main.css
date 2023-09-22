@@ -2116,11 +2116,9 @@ section {
   color: #29486a;
   position: relative;
   padding-bottom: 12px;
-  justify-content: center;
+
 }
-.footer1  {
-  justify-content: center;
-}
+
 
 .footer .footer-content .footer-links {
   margin-bottom: 30px;

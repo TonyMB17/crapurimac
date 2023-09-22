@@ -6,20 +6,29 @@
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
             <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/LOGO.png" alt="">
+              <img id="logo2" src="assets/img/logo.png" alt="">
+              <!-- <span>Nova</span> -->
             </a>
-            <p>La corrupción socava los cimientos de la sociedad, pero juntos podemos construir un futuro más justo y transparente. Cada acto de integridad es un paso hacia un mundo mejor. Luchemos juntos contra la corrupción, porque la honestidad es la base de un mañana más brillante</p>
+            <p>La corrupción socava los cimientos de la sociedad, pero juntos podemos construir un futuro más justo y transparente. Cada acto de integridad es un paso hacia un mundo mejor. Luchemos juntos contra la corrupción, porque la honestidad es la base de un mañana más brillante.</p>
             
           </div>
 
-          <div class="col-lg-5 col-md-12 footer-contact text-center text-md-start">
-            <h4 class="footer1">Siguenos</h4>
-            <div class="social-links footer1 d-flex  mt-3">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
+          <div class="col-lg-2 col-6 footer-links">
+           
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Síguenos</h4>
+              <div class="social-links d-flex  mt-3">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            
           </div>
 
         </div>
@@ -29,14 +38,7 @@
     <div class="footer-legal">
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span>Nova</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nova-bootstrap-business-template/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          &copy; 2023 <a href="#"> <strong><span>CRAA - Comisión Regional Anticorrupción de Apurímac</span></strong> </a>. Algunos derechos reservados
         </div>
       </div>
     </div>
