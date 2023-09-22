@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\NoticiasController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -65,3 +66,8 @@ CONTACTO
 Route::get('/contacto', function () {
     return view('contacto');
 })->name('contacto');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('home', NoticiasController::class);
