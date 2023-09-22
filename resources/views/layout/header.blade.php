@@ -30,6 +30,8 @@
   <!-- Template Main CSS File -->
   <link href="{{asset('/assets/css/main.css')}}" rel="stylesheet">
 
+  
+
   <!-- =======================================================
   * Template Name: Nova
   * Updated: Aug 30 2023 with Bootstrap v5.3.1
