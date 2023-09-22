@@ -18,11 +18,16 @@
 
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
 
+          <div class="section-header">
+            <h2>CONTACTO</h2>
+
+          </div>
+
             <div class="info-item d-flex">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <h4>Ubicación:</h4>
+                <p>Jr. Puno - Abancay</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -37,14 +42,19 @@
             <div class="info-item d-flex">
               <i class="bi bi-phone flex-shrink-0"></i>
               <div>
-                <h4>Call:</h4>
+                <h4>Llamar:</h4>
                 <p>+1 5589 55488 55</p>
               </div>
             </div><!-- End Info Item -->
-
+            
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+
+            <div class="section-header">
+              <h2>Envianos un mensaje</h2>
+
+            </div>
 
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
@@ -75,6 +85,19 @@
 
       </div>
     </section><!-- End Contact Section -->
+
+    <!-- ======= Why Choose Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="row m-4" >
+
+        <div class="section-header">
+          <h2>UBÍCANOS</h2>
+
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d637.6764553557473!2d-72.8786958002813!3d-13.637751509610498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916d02de8075c541%3A0xb81a1a827337f593!2sGobierno%20Regional%20de%20Apurimac!5e0!3m2!1ses!2spe!4v1695411196015!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+    </section><!-- End Why Choose Us Section -->
 
   </main><!-- End #main -->
 

@@ -32,32 +32,32 @@
                     <div class="col-lg-8">
                         <div class="content ps-lg-5">
                            <!-- formulario  -->
-                           <div class="containerform">
-                            <header>Registrar Cliente</header>
+                          <div class="containerform">
+                            <header>Formulario</header>
                             <div class="progress-bar">
                               <div class="step">
-                                <p>Paso 1</p>
+                                <p>Datos del <br> Denunciante</p>
                                 <div class="bullet">
                                   <span>1</span>
                                 </div>
                                 <div class="check fas fa-check"></div>
                               </div>
                               <div class="step">
-                                <p>Paso 2</p>
+                                <p>Datos del <br> Denunciado</p>
                                 <div class="bullet">
                                   <span>2</span>
                                 </div>
                                 <div class="check fas fa-check"></div>
                               </div>
                               <div class="step">
-                                <p>Paso 3</p>
+                                <p>Detalle de <br> la denuncia</p>
                                 <div class="bullet">
                                   <span>3</span>
                                 </div>
                                 <div class="check fas fa-check"></div>
                               </div>
                               <div class="step">
-                                <p>Fin</p>
+                                <p>Fin de <br> la Denuncia</p>
                                 <div class="bullet">
                                   <span>4</span>
                                 </div>
@@ -68,27 +68,41 @@
                               <form action="#" >
                                 <div class="page slide-page">
                                   <div class="field">
-                                    <div class="label">Nombre Completo</div>
+                                    <div class="label">DNI</div>
                                     <input type="text">
                                   </div>
                                   <div class="field">
-                                    <div class="label">Apellidos</div>
+                                    <div class="label">Nombre</div>
                                     <input type="text">
                                   </div>
-                                  <div class="field">
+                                  <div class="rowFormulario">
+                                    <div class="col-md-6 field">
+                                      <div class="label">Teléfono</div>
+                                      <input type="Number">
+                                    </div>
+                                    <div class="col-md-6 field mt-3 mt-md-0">
+                                      <div class="label">Correo</div>
+                                      <input type="email">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 field">
                                     <button class="firstNext next">Siguiente</button>
                                   </div>
                                 </div>
 
                                 <div class="page">
-                                  <div class="title">Información de Contacto</div>
+                                  <!-- <div class="title">Información de Contacto</div> -->
                                   <div class="field">
-                                    <div class="label">Correo Electronico</div>
+                                    <div class="label">Apellidos y Nombres</div>
                                     <input type="text">
                                   </div>
                                   <div class="field">
-                                    <div class="label">Número de Telefono</div>
-                                    <input type="Number">
+                                    <div class="label">Institución</div>
+                                    <input type="text">
+                                  </div>
+                                  <div class="field">
+                                    <div class="label">Cargo</div>
+                                    <input type="text">
                                   </div>
                                   <div class="field btns">
                                     <button class="prev-1 prev">Atrás</button>
@@ -98,35 +112,28 @@
 
                                 <div class="page">
                                   <div class="field">
-                                    <div class="label">Fecha de Nacimiento</div>
+                                    <div class="label">Fecha</div>
                                     <input type="datetime-local">
                                   </div>
                                   <div class="field">
-                                    <div class="label">Genero</div>
-                                    <select>
-                                      <option>Masculino</option>
-                                      <option>Femenino</option>
-                                    </select>
+                                    <div class="label">Descripción de los Hechos</div>
+                                    <input type="text">
+                                  </div>
+                                  <div class="field">
+                                    <div class="label">Testigos</div>
+                                    <input type="text">
                                   </div>
                                   <div class="field btns">
                                     <button class="prev-2 prev">Atrás</button>
-                                    <button class="next-2 next">Siguiente</button>
+                                    <button class="next-2 next">Enviar</button>
                                   </div>
                                 </div>
 
                                 <div class="page">
-                                  <div class="title">Datos de Login</div>
-                                  <div class="field">
-                                    <div class="label">Usuario</div>
-                                    <input type="text">
-                                  </div>
-                                  <div class="field">
-                                    <div class="label">Clave</div>
-                                    <input type="password">
-                                  </div>
+                                  <div class="title">Datos enviados</div>
                                   <div class="field btns">
-                                    <button class="prev-3 prev">Atrás</button>
-                                    <button class="submit">Enviar</button>
+                                    <!-- <button class="prev-3 prev">Atrás</button> -->
+                                    <button class="submit">Finalizar</button>
                                   </div>
                                 </div>
                               </form>

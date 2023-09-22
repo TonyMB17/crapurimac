@@ -1388,7 +1388,7 @@ section {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 5px;
-  color: #1c88ba;
+  color: #dc3545;
 }
 
 .contact .info-item p {
@@ -1464,7 +1464,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #1f98d1;
+  background: #dc3545;
   border: 0;
   padding: 12px 40px;
   color: #fff;
