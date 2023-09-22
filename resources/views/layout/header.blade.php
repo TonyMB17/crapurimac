@@ -56,7 +56,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="{{ url('/welcome') }}" >INICIO</a></li>
+          <li><a href="{{route('Inicio')}}" >INICIO</a></li>
           <li class="dropdown"><a href="#"><span>QUIÉNES SOMOS</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="{{route('presentacion')}}">PRESENTACIÓN</a></li>

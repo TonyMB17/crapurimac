@@ -136,80 +136,135 @@
           </div>
       </section><!-- End Recent Blog Posts Section -->
 
-      <!-- ======= Why Choose Us Section ======= -->
-      <section id="why-us" class="recent-posts" style="background: #a3a3a33b;">
-          <div class="container" data-aos="fade-up">
 
-              <div class="section-header">
-                  <h2>INSTITUCIONES MIEMBROS</h2>
+      <!-- ======= Instituciones Miembros Section ======= -->
+    <section id="testimonials" class="testimonials" style="background: #a3a3a33b;">
+      <div class="container" data-aos="fade-up">
 
+        <div class="section-header">
+          <h2>INSTITUCIONES MIEMBROS</h2>
+
+        </div>
+
+        <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <!-- <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4> -->
+                </div>
               </div>
+            </div><!-- End testimonial item -->
 
-              <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-
-                  <div class="slides  position-relative">
-
-                      <div class="slides-1 swiper">
-                          <div class="swiper-wrapper">
-
-                              <div class="swiper-slide">
-                                  <div class="item">
-                                      <h3 class="mb-3">Let's grow your business together</h3>
-                                      <h4 class="mb-3">Optio reiciendis accusantium iusto architecto at quia minima
-                                          maiores quidem, dolorum.</h4>
-                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsam
-                                          perferendis asperiores explicabo vel tempore velit totam, natus nesciunt
-                                          accusantium dicta quod quibusdam ipsum maiores nobis non, eum. Ullam
-                                          reiciendis dignissimos laborum aut, magni voluptatem velit doloribus quas
-                                          sapiente optio.</p>
-                                  </div>
-                              </div><!-- End slide item -->
-
-                              <div class="swiper-slide">
-                                  <div class="item">
-                                      <h3 class="mb-3">Unde perspiciatis ut repellat dolorem</h3>
-                                      <h4 class="mb-3">Amet cumque nam sed voluptas doloribus iusto. Dolorem eos
-                                          aliquam quis.</h4>
-                                      <p>Dolorem quia fuga consectetur voluptatem. Earum consequatur nulla maxime
-                                          necessitatibus cum accusamus. Voluptatem dolorem ut numquam dolorum delectus
-                                          autem veritatis facilis. Et ea ut repellat ea. Facere est dolores fugiat
-                                          dolor.</p>
-                                  </div>
-                              </div><!-- End slide item -->
-
-                              <div class="swiper-slide">
-                                  <div class="item">
-                                      <h3 class="mb-3">Aliquid non alias minus</h3>
-                                      <h4 class="mb-3">Necessitatibus voluptatibus explicabo dolores a vitae
-                                          voluptatum.</h4>
-                                      <p>Neque voluptates aut. Soluta aut perspiciatis porro deserunt. Voluptate ut
-                                          itaque velit. Aut consectetur voluptatem aspernatur sequi sit laborum.
-                                          Voluptas enim dolorum fugiat aut.</p>
-                                  </div>
-                              </div><!-- End slide item -->
-
-                              <div class="swiper-slide">
-                                  <div class="item">
-                                      <h3 class="mb-3">Necessitatibus suscipit non voluptatem quibusdam</h3>
-                                      <h4 class="mb-3">Tempora quos est ut quia adipisci ut voluptas. Deleniti
-                                          laborum soluta nihil est. Eum similique neque autem ut.</h4>
-                                      <p>Ut rerum et autem vel. Et rerum molestiae aut sit vel incidunt sit at
-                                          voluptatem. Saepe dolorem et sed voluptate impedit. Ad et qui sint at qui
-                                          animi animi rerum.</p>
-                                  </div>
-                              </div><!-- End slide item -->
-
-                          </div>
-                          <div class="swiper-pagination"></div>
-                      </div>
-                      <div class="swiper-button-prev"></div>
-                      <div class="swiper-button-next"></div>
-                  </div>
-
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <!-- <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4> -->
+                </div>
               </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <!-- <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4> -->
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <!-- <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4> -->
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <!-- <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4> -->
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <!-- <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4> -->
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <!-- <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4> -->
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <!-- <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4> -->
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <!-- <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4> -->
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <!-- <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4> -->
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <!-- <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4> -->
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
 
           </div>
-      </section><!-- End Why Choose Us Section -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Instituciones Miembros Section -->
 
   </main><!-- End #main -->
 
