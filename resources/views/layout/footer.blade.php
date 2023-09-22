@@ -6,7 +6,7 @@
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
             <a href="index.html" class="logo d-flex align-items-center">
-              <img id="logo2" src="assets/img/logo.png" alt="">
+            <img src="{{ asset('/assets/img/LOGO.png') }}" alt="">
               <!-- <span>Nova</span> -->
             </a>
             <p>La corrupción socava los cimientos de la sociedad, pero juntos podemos construir un futuro más justo y transparente. Cada acto de integridad es un paso hacia un mundo mejor. Luchemos juntos contra la corrupción, porque la honestidad es la base de un mañana más brillante.</p>

@@ -47,7 +47,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/LOGO.png" alt="">
+        <img src="{{ asset('/assets/img/LOGO.png') }}" alt="">
         <!-- <h1 class="d-flex align-items-center">Nova</h1> -->
       </a>
 
