@@ -19,7 +19,7 @@
         <div class="section-header">
           <h2>Marco Normativo</h2>
 
-        </div>        
+        </div>    
 
         <div>
           <div class="marco" style="font-size: 2em">

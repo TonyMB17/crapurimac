@@ -71,7 +71,7 @@ section {
 }
 
 .section-header h2 {
-  font-size: 5em;
+  font-size: 2em;
   font-weight: 600;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -699,7 +699,7 @@ section {
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 700;
-  font-size: 5em;
+  font-size: 2em;
   font-family: var(--font-secondary);
   color: var(--color-secondary);
 }
@@ -707,7 +707,7 @@ section {
 .about .content p {
   margin: 30px 0;
   color: #29486a;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .about .content ul {
