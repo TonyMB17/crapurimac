@@ -35,7 +35,7 @@
       <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
         <div class="icon flex-shrink-0"><i class="bi bi-check2-circle" style="color: #f51313;"></i></div>
         <div>
-          <h4 class="title" style="color: #f51313">Objetivo 1</h4>
+          <h4 class="title" style="color: #f51313">Objetivo 2</h4>
           <p class="description">Mejorar la capacidad de articulación de las entidades el departamento para prevenir, investigar y sancionar la corrupción en el marco de sus competencias, asegurando la rendición periódica de cuentas.</p>
         </div>
       </div>
@@ -44,7 +44,7 @@
       <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
         <div class="icon flex-shrink-0"><i class="bi bi-check2-circle" style="color: #f51313;"></i></div>
         <div>
-          <h4 class="title" style="color: #f51313">Objetivo 1</h4>
+          <h4 class="title" style="color: #f51313">Objetivo 3</h4>
           <p class="description">Incentivar y difundir una cultura de valores y principios de integridad pública en el departamento de Cajamarca.</p>
         </div>
       </div>

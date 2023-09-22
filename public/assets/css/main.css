@@ -38,13 +38,13 @@ body {
 }
 
 a {
-  color: var(--color-primary);
+  color: rgba(27, 47, 69, 0.8);
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
-  color: #82cbed;
+  color: #db0e0e;
   text-decoration: none;
 }
 
@@ -746,11 +746,11 @@ section {
 }
 
 .services-list .service-item .title {
-  font-weight: 700;
-  margin-bottom: 5px;
+  font-weight: 600;
+  margin-bottom: 15px;
   font-size: 18px;
   color: #f51313;
-  font-size: 2em;
+  font-size: 1.3rem;
 }
 
 .services-list .service-item .title a {
@@ -2189,4 +2189,34 @@ section {
   text-align: center;
   font-size: 13px;
   color: var(--color-secondary);
+}
+
+
+/*      actas          */
+#poster {
+  height: 50px;
+  width: 2000;
+  transition: box-shadow 0.5s;
+  border-radius: 5px;
+  font-size: 1.3em
+}
+#poster:hover {
+  box-shadow: 0px 0px 50px rgb(0, 0, 0, 1)
+}
+
+#poster1 {
+  height: 80px;
+  width: 2000;
+  transition: box-shadow 0.3s;
+  border-radius: 5px;
+  font-size: 1.3em
+}
+#poster1:hover {
+  box-shadow: 0px 0px 50px rgb(0, 0, 0, 1)
+}
+
+
+/*      Presentacion          */
+#borde {
+  border-end-end-radius: 100px;
 }

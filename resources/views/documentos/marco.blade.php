@@ -22,7 +22,7 @@
         </div>    
 
         <div>
-          <div class="marco" style="font-size: 2em">
+          <div id="poster" class="marco" >
             <a href="https://cracajamarca.org.pe/wp-content/uploads/2022/07/Ley-N-29976-Ley-que-crea-la-Comision-de-Alto-Nivel-Anticorrupcion.pdf">
             <div class="icon-list d-flex">
               <i class="bi bi-filetype-pdf" style="color: #e72323; font-size: 1.3em"></i>
@@ -32,7 +32,7 @@
           </div><!-- End Icon List Item-->
           <br>
 
-          <div class="marco" style="font-size: 2em">
+          <div id="poster" class="marco" >
             <a href="https://cracajamarca.org.pe/wp-content/uploads/2022/07/Ley-N-28024-Ley-que-regula-la-gestion-de-intereses-en-la-administracion-publica.pdf">
             <div class="icon-list d-flex">
               <i class="bi bi-filetype-pdf" style="color: #e72323; font-size: 1.3em"></i>
@@ -42,7 +42,7 @@
           </div><!-- End Icon List Item-->
           <br>
 
-          <div class="marco" style="font-size: 2em">
+          <div id="poster1" class="marco" >
             <a href="https://cracajamarca.org.pe/wp-content/uploads/2022/07/Ley-N-28024-Ley-que-regula-la-gestion-de-intereses-en-la-administracion-publica.pdf">
             <div class="icon-list d-flex">
               <i class="bi bi-filetype-pdf" style="color: #e72323; font-size: 1.3em"></i>
@@ -52,7 +52,7 @@
           </div><!-- End Icon List Item-->
           <br>
 
-          <div class="marco" style="font-size: 2em">
+          <div id="poster" class="marco" >
             <a href="https://cracajamarca.org.pe/wp-content/uploads/2022/07/Decreto-Legislativo-N%C2%B0-1327.pdf.pdf">
             <div class="icon-list d-flex">
              <i class="bi bi-filetype-pdf" style="color: #e72323; font-size: 1.3em"></i>
@@ -62,7 +62,7 @@
           </div><!-- End Icon List Item-->
           <br>
 
-          <div class="marco" style="font-size: 2em">
+          <div id="poster1" class="marco" >
             <a href="https://cracajamarca.org.pe/wp-content/uploads/2022/07/Decreto-Supremo-N%C2%B0-089-2013-PCM.pdf">
             <div class="icon-list d-flex">
               <i class="bi bi-filetype-pdf" style="color: #e72323; font-size: 1.3em"></i>
@@ -72,7 +72,7 @@
           </div><!-- End Icon List Item-->
           <br>
 
-          <div class="marco" style="font-size: 2em">
+          <div id="poster1" class="marco" >
             <a href="https://cracajamarca.org.pe/wp-content/uploads/2022/07/Decreto-Supremo-N%C2%B0-092-2017-PCM-Parte-1.pdf">
             <div class="icon-list d-flex">
               <i class="bi bi-filetype-pdf" style="color: #e72323; font-size: 1.3em"></i>
@@ -82,7 +82,7 @@
           </div><!-- End Icon List Item-->
           <br>
 
-          <div class="marco" style="font-size: 2em">
+          <div id="poster1" class="marco" >
             <a href="https://cracajamarca.org.pe/wp-content/uploads/2022/07/Decreto-Supremo-N%C2%B0-120-2019-PCM.pdf">
             <div class="icon-list d-flex">
               <i class="bi bi-filetype-pdf" style="color: #e72323; font-size: 1.3em"></i>
@@ -92,7 +92,7 @@
           </div><!-- End Icon List Item-->
           <br>
 
-          <div class="marco" style="font-size: 2em">
+          <div id="poster1" class="marco" >
             <a href="https://cracajamarca.org.pe/wp-content/uploads/2022/07/Decreto-Supremo-N%C2%B0-169-2021-PCM.pdf">
             <div class="icon-list d-flex">
               <i class="bi bi-filetype-pdf" style="color: #e72323; font-size: 1.3em"></i>
@@ -102,7 +102,7 @@
           </div><!-- End Icon List Item-->
           <br>
 
-          <div class="marco" style="font-size: 2em">
+          <div id="poster1" class="marco" >
             <a href="https://cracajamarca.org.pe/wp-content/uploads/2022/07/Resolucion-de-Secretaria-de-Integridad-Publica-N-001-2019-PCM-SIP.pdf">
             <div class="icon-list d-flex">
               <i class="bi bi-filetype-pdf" style="color: #e72323; font-size: 1.3em"></i>
@@ -112,7 +112,7 @@
           </div><!-- End Icon List Item-->
           <br>
 
-          <div class="marco" style="font-size: 2em">
+          <div id="poster1" class="marco" >
             <a href="https://cracajamarca.org.pe/wp-content/uploads/2022/07/R-SIP-N%C2%B0002-2021-PCM-SIP-Parte-1.pdf">
             <div class="icon-list d-flex">
               <i class="bi bi-filetype-pdf" style="color: #e72323; font-size: 1.3em"></i>

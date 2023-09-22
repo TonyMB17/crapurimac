@@ -12,12 +12,12 @@
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <!-- ======= Team Section ======= -->
+    <!-- ======= PRESIDENTE CRAA ======= -->
     <section id="team" class="team">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>PRESIDENTE CRAC</h2>
+          <h2>PRESIDENTE CRAA</h2>
 
         </div>
 
@@ -44,7 +44,10 @@
         </div>
 
       </div>
+    </section><!-- End Team Section -->
 
+    <!-- ======= MIEMBROS PLENOS ======= -->
+    <section id="team" class="team">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -255,7 +258,10 @@
         </div>
 
       </div>
-
+    </section><!-- End Team Section -->
+  
+    <!-- ======= MIEMBRO NO PLENO ======= -->
+    <section id="team" class="team">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -286,7 +292,10 @@
         </div>
 
       </div>
+    </section><!-- End Team Section -->
 
+    <!-- ======= SECRETARIO TÉCNICO ======= -->
+    <section id="team" class="team">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -318,7 +327,6 @@
 
       </div>
     </section><!-- End Team Section -->
-  
 
   </main><!-- End #main -->
 

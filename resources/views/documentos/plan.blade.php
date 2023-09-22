@@ -16,14 +16,17 @@
     <section id="team" class="team">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-header">
-          <h2>Plan de Trabajo</h2>
+        <!-- ======= Why Choose Us Section ======= -->
+        <section id="why-us" class="why-us">
+          <div class="row m-4" >
 
-        </div>
+            <div class="section-header">
+              <h2>Plan de Trabajo</h2>
 
-        <div>
-          <object data="PLAN-ANUAL-DE-TRABAJO-2022-CRAC-U.pdf" height="100%" width="100%"></object>
-        </div>
+            </div>
+            <embed src="{{asset('/assets/pdf/PLAN-ANUAL-DE-TRABAJO-2022-CRAC-U.pdf')}}" type="application/pdf" width="420px" height="630px">
+          </div>
+        </section><!-- End Why Choose Us Section -->
 
       </div>
     </section><!-- End Team Section -->
