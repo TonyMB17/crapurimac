@@ -20,8 +20,8 @@
 /* Colors */
 :root {
   --color-default: #2b180d;
-  --color-primary: #56b8e6;
-  --color-secondary: #1b2f45;
+  --color-primary: #db0e0e;
+  --color-secondary: #2a1b45;
 }
 
 /* Smooth scroll behavior */
@@ -2117,7 +2117,9 @@ section {
   color: #29486a;
   position: relative;
   padding-bottom: 12px;
+
 }
+
 
 .footer .footer-content .footer-links {
   margin-bottom: 30px;
@@ -2151,6 +2153,7 @@ section {
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
+  
 }
 
 .footer .footer-content .footer-links ul a:hover {
@@ -2160,6 +2163,7 @@ section {
 .footer .footer-content .footer-contact p {
   line-height: 26px;
   color: var(--color-secondary);
+
 }
 
 .footer .footer-legal {
