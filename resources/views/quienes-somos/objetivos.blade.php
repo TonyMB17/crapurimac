@@ -67,7 +67,7 @@
     <div class="col-lg-8">
       <div class="content ps-lg-5">        
         <p>
-          Son funciones de la Comisión Regional Anticorrupción de Cajamarca:
+          Son funciones de la Comisión Regional Anticorrupción de Apurímac:
         </p>
         <ul>
           <li><i class="bi bi-check-circle-fill"></i> Proponer al gobierno regional acciones de corto, mediano y largo plazo para la implementación de la política en materia de integridad y lucha contra la corrupción en el ámbito territorial que le corresponde.</li>

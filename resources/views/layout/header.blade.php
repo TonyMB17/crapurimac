@@ -30,6 +30,8 @@
   <!-- Template Main CSS File -->
   <link href="{{asset('/assets/css/main.css')}}" rel="stylesheet">
 
+  
+
   <!-- =======================================================
   * Template Name: Nova
   * Updated: Aug 30 2023 with Bootstrap v5.3.1
@@ -56,7 +58,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="{{ url('/welcome') }}" >INICIO</a></li>
+          <li><a href="{{route('Inicio')}}" >INICIO</a></li>
           <li class="dropdown"><a href="#"><span>QUIÉNES SOMOS</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="{{route('presentacion')}}">PRESENTACIÓN</a></li>
