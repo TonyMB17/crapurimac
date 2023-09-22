@@ -20,8 +20,8 @@
 /* Colors */
 :root {
   --color-default: #2b180d;
-  --color-primary: #db0e0e;
-  --color-secondary: #2a1b45;
+  --color-primary: #b93e3e;
+  --color-secondary: #2c2c2c;
 }
 
 /* Smooth scroll behavior */
@@ -71,11 +71,12 @@ section {
 }
 
 .section-header h2 {
-  font-size: 32px;
+  font-size: 5em;
   font-weight: 600;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color: var(--color-secondary);
 }
 
 .section-header h2:after {
@@ -109,7 +110,7 @@ section {
 
 .breadcrumbs:before {
   content: "";
-  background-color: rgba(27, 47, 69, 0.7);
+  background-color: rgba(69, 27, 27, 0.7);
   position: absolute;
   inset: 0;
 }
@@ -236,6 +237,8 @@ section {
   transition: all 0.5s;
   z-index: 997;
   padding: 24px 0;
+  background: rgb(255, 255, 255);
+  font-size: 2em;
 }
 
 @media (max-width: 1200px) {
@@ -696,7 +699,7 @@ section {
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 5em;
   font-family: var(--font-secondary);
   color: var(--color-secondary);
 }
@@ -704,6 +707,7 @@ section {
 .about .content p {
   margin: 30px 0;
   color: #29486a;
+  font-size: 1.5em;
 }
 
 .about .content ul {
@@ -744,19 +748,21 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
+  color: #f51313;
+  font-size: 3em;
 }
 
 .services-list .service-item .title a {
-  color: var(--color-secondary);
+  color: rgb(190, 31, 31);
 }
 
 .services-list .service-item .title a:hover {
-  color: #38618e;
+  color: #ff0000;
 }
 
 .services-list .service-item .description {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 1.2em;
 }
 
 /*--------------------------------------------------------------
