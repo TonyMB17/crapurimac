@@ -86,7 +86,7 @@
                                               <div class="col-md-6 field mt-3 mt-md-0">
                                                   <div class="label">Correo</div>
                                                   <input name="correo" type="email" class="form-control" id="email" placeholder="Correo Electronico" onkeyup="validarEmail(this)" required> <br>
-                                                  <a b id='resultado'></a>
+                                                  <a id='resultado'></a>
                                                 </div>
                                           </div>
                                           <div class="col-md-6 field">
@@ -98,11 +98,11 @@
                                           <!-- <div class="title">Información de Contacto</div> -->
                                           <div class="field">
                                               <div class="label">Apellidos y Nombres</div>
-                                              <input name="denunciado" type="text" class="form-control" id="recipient-name">
+                                              <input name="denunciado" type="text" class="form-control" id="recipient-name" required>
                                             </div>
                                           <div class="field">
                                               <div class="label">Institución</div>
-                                              <input name="institucion" type="text" class="form-control" id="recipient-name">
+                                              <input name="institucion" type="text" class="form-control" id="recipient-name" required>
                                             </div>
                                           <div class="field">
                                               <div class="label">Cargo</div>
@@ -121,11 +121,11 @@
                                             </div>
                                           <div class="field">
                                               <div class="label">Descripción de los Hechos</div>
-                                              <input name="descripcion" type="text" class="form-control" id="recipient-name">
+                                              <textarea name="descripcion" type="text" class="form-control" id="recipient-name" required></textarea>
                                             </div>
                                           <div class="field">
                                               <div class="label">Testigos</div>
-                                              <input name="testigos" type="text" class="form-control" id="recipient-name">
+                                              <textarea name="testigos" type="text" class="form-control" id="recipient-name" required></textarea>
                                             </div>
                                           <div class="field btns">
                                               <button class="prev-2 prev">Atrás</button>
