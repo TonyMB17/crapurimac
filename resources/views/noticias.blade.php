@@ -17,7 +17,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Noticias</h2>
+          <h2>Últimas</h2>
 
         </div>
 

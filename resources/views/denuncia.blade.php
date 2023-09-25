@@ -72,11 +72,11 @@
                                       <div class="page slide-page">
                                           <div class="field">
                                               <div class="label">DNI</div>
-                                              <input name="dni" type="text" class="form-control" id="recipient-name">
+                                              <input name="dni" type="number" class="form-control" id="recipient-name" required>
                                             </div>
                                           <div class="field">
                                               <div class="label">Nombre</div>
-                                              <input name="nombre" class="form-control" id="message-text">
+                                              <input name="nombre" class="form-control" id="message-text" required>
                                           </div>
                                           <div class="rowFormulario">
                                               <div class="col-md-6 field">
@@ -128,7 +128,7 @@
                                             </div>
                                           <div class="field btns">
                                               <button class="prev-2 prev">Atrás</button>
-                                              <button class="next-2 next">Enviar</button>
+                                              <button class="submit next-2 next">Enviar</button>
                                           </div>
                                       </div>
 
@@ -136,7 +136,7 @@
                                           <div class="title">Datos enviados</div>
                                           <div class="field btns">
                                               <!-- <button class="prev-3 prev">Atrás</button> -->
-                                              <button class="submit">Finalizar</button>
+                                              <button class="">Finalizar</button>
                                           </div>
                                       </div>
                                   </form>

@@ -74,7 +74,7 @@
                                 class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>
                             <li><a href="{{ route('plan') }}">PLAN ANUAL DE TRABAJO</a></li>
-                            <li><a href="{{ route('marco') }}">MARCO NORVATIVO</a></li>
+                            <li><a href="{{ route('marco') }}">MARCO NORMATIVO</a></li>
                             <li><a href="{{ route('actas') }}">ACTAS</a></li>
                         </ul>
                     </li>
