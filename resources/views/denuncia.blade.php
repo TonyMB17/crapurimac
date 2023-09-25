@@ -72,24 +72,25 @@
                                       <div class="page slide-page">
                                           <div class="field">
                                               <div class="label">DNI</div>
-                                              <input name="dni" type="number" class="form-control" id="recipient-name" required>
+                                              <input name="dni" type="number" class="form-control" id="recipient-name" placeholder="DNI" required>
                                             </div>
                                           <div class="field">
                                               <div class="label">Nombre</div>
-                                              <input name="nombre" class="form-control" id="message-text" required>
+                                              <input name="nombre" class="form-control" id="message-text" placeholder="Nombre" required>
                                           </div>
                                           <div class="rowFormulario">
                                               <div class="col-md-6 field">
                                                   <div class="label">Teléfono</div>
-                                                  <input name="telefono" type="number" class="form-control" id="recipient-name">
+                                                  <input name="telefono" type="number" class="form-control" id="recipient-name" placeholder="Teléfono">
                                                 </div>
                                               <div class="col-md-6 field mt-3 mt-md-0">
                                                   <div class="label">Correo</div>
-                                                  <input name="correo" type="email" class="form-control" id="recipient-name">
+                                                  <input name="correo" type="email" class="form-control" id="email" placeholder="Correo Electronico" onkeyup="validarEmail(this)" required> <br>
+                                                  <a b id='resultado'></a>
                                                 </div>
                                           </div>
                                           <div class="col-md-6 field">
-                                              <button class="firstNext next">Siguiente</button>
+                                              <button class="firstNext next" onclick="validarCorreo(form.correo.value)">Siguiente</button>
                                           </div>
                                       </div>
 

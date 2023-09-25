@@ -231,3 +231,30 @@ el.addEventListener('mousemove', () => {
     rotateY(0)
   `
 })
+
+
+// validaciones 
+
+// function validarCorreo(correo){
+//   var expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+//   var esValidado = expReg.test(correo);
+//   if(esValidado == true){
+//     alert('El correo electronico es Válidado');
+//   }
+//   else{
+//     alert('El correo electronico NO es Válidado, Considere: example@gmail.com');
+//   }
+// }
+
+function validarEmail(elemento){
+
+  var texto = document.getElementById(elemento.id).value;
+  var regex =  /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+  
+  if (!regex.test(texto)) {
+      document.getElementById("resultado").innerHTML = "Correo invalido";
+  } else {
+    document.getElementById("resultado").innerHTML = "";
+  }
+
+}

@@ -68,6 +68,13 @@
                     <i class="fas fa-fw fa-table"></i>
                     <span>Denuncias</span></a>
             </li>
+            
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('home.documentos')}}">
+                    <i class="fas fa-fw fa-clipboard"></i>
+                    <span>Documentos</span></a>
+            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
