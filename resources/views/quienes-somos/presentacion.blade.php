@@ -9,10 +9,10 @@
         <div class="container position-relative d-flex flex-column align-items-center">
 
             <h2>PRESENTACION</h2>
-            <ol>
+            <!-- <ol>
             <li><a href="{{route('Inicio')}}">INICIO</a></li>
             <li>PRESENTACIÓN</li>
-            </ol>
+            </ol> -->
 
         </div>
     </div><!-- End Breadcrumbs -->

@@ -11,7 +11,7 @@
               departamento de Apurimac</p>
           </blockquote>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#about" class="btn-get-started">Leer Más</a>
+            <a href="{{ route('presentacion') }}" class="btn-get-started">Leer Más</a>
           </div>
 
         </div>
