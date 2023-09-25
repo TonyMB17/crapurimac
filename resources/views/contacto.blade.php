@@ -27,15 +27,15 @@
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h4>Ubicación:</h4>
-                <p>Jr. Puno - Abancay</p>
+                <p>Jr. Puno 107 - Abancay - Apurímac - Perú</p>
               </div>
             </div><!-- End Info Item -->
 
             <div class="info-item d-flex">
-              <i class="bi bi-envelope flex-shrink-0"></i>
+              <i class="bi bi-globe flex-shrink-0"></i>
               <div>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
+                <h4>web</h4>
+                <a href="https://www.regionapurimac.gob.pe/directorio/">www.regionapurimac.gob.pe/directorio/</a>
               </div>
             </div><!-- End Info Item -->
 
@@ -43,7 +43,7 @@
               <i class="bi bi-phone flex-shrink-0"></i>
               <div>
                 <h4>Llamar:</h4>
-                <p>+1 5589 55488 55</p>
+                <p>083 - 321022</p>
               </div>
             </div><!-- End Info Item -->
             

@@ -62,8 +62,8 @@ class DocumentoController extends Controller
     }
     public function update(Request $request, $id)
     {
-        $documentos = Documentos::find($id);
-        $noticias->nombre = $request->input('nombre');
+        $documentos = Documento::find($id);
+        $documentos->nombre = $request->input('nombre');
 
         if($request->hasFile('file')){
             $file=$request->file('file');
@@ -73,14 +73,14 @@ class DocumentoController extends Controller
             $documentos->file = $destinationPath . $filename;
         }
 
-        $noticias->update();
+        $documentos->update();
 
         return redirect()->back();
         //
     }
     public function destroy($id)
     {
-        $documentos = Documentos::find($id);
+        $documentos = Documento::find($id);
         $documentos->delete();
 
         return redirect()->back();
