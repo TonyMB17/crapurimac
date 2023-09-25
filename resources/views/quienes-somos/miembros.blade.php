@@ -36,7 +36,7 @@
               </div>
               <div class="member-info">
                 <h4>Dr. PERCY HARDY HORNA LEÓN</h4>
-                <span>Presidente de la Corte Superior de Justica de Cajamarca</span>
+                <span>Presidente de la Corte Superior de Justica de Apurímac</span>
               </div>
             </div>
           </div><!-- End Team Member -->    
@@ -70,7 +70,7 @@
               </div>
               <div class="member-info">
                 <h4>Dr. PERCY HARDY HORNA LEÓN</h4>
-                <span>Presidente de la Corte Superior de Justica de Cajamarca</span>
+                <span>Presidente de la Corte Superior de Justica de Apurímac</span>
               </div>
             </div>
           </div><!-- End Team Member --> 
@@ -88,7 +88,7 @@
               </div>
               <div class="member-info">
                 <h4>Dr. PERCY HARDY HORNA LEÓN</h4>
-                <span>Presidente de la Corte Superior de Justica de Cajamarca</span>
+                <span>Presidente de la Corte Superior de Justica de Apurímac</span>
               </div>
             </div>
           </div><!-- End Team Member --> 
@@ -106,7 +106,7 @@
               </div>
               <div class="member-info">
                 <h4>Dr. PERCY HARDY HORNA LEÓN</h4>
-                <span>Presidente de la Corte Superior de Justica de Cajamarca</span>
+                <span>Presidente de la Corte Superior de Justica de Apurímac</span>
               </div>
             </div>
           </div><!-- End Team Member --> 
@@ -124,7 +124,7 @@
               </div>
               <div class="member-info">
                 <h4>Dr. PERCY HARDY HORNA LEÓN</h4>
-                <span>Presidente de la Corte Superior de Justica de Cajamarca</span>
+                <span>Presidente de la Corte Superior de Justica de Apurímac</span>
               </div>
             </div>
           </div><!-- End Team Member --> 
@@ -142,7 +142,7 @@
               </div>
               <div class="member-info">
                 <h4>Dr. PERCY HARDY HORNA LEÓN</h4>
-                <span>Presidente de la Corte Superior de Justica de Cajamarca</span>
+                <span>Presidente de la Corte Superior de Justica de Apurímac</span>
               </div>
             </div>
           </div><!-- End Team Member --> 
@@ -160,7 +160,7 @@
               </div>
               <div class="member-info">
                 <h4>Dr. PERCY HARDY HORNA LEÓN</h4>
-                <span>Presidente de la Corte Superior de Justica de Cajamarca</span>
+                <span>Presidente de la Corte Superior de Justica de Apurímac</span>
               </div>
             </div>
           </div><!-- End Team Member --> 
@@ -178,7 +178,7 @@
               </div>
               <div class="member-info">
                 <h4>Dr. PERCY HARDY HORNA LEÓN</h4>
-                <span>Presidente de la Corte Superior de Justica de Cajamarca</span>
+                <span>Presidente de la Corte Superior de Justica de Apurímac</span>
               </div>
             </div>
           </div><!-- End Team Member --> 
@@ -196,7 +196,7 @@
               </div>
               <div class="member-info">
                 <h4>Dr. PERCY HARDY HORNA LEÓN</h4>
-                <span>Presidente de la Corte Superior de Justica de Cajamarca</span>
+                <span>Presidente de la Corte Superior de Justica de Apurímac</span>
               </div>
             </div>
           </div><!-- End Team Member --> 
@@ -214,7 +214,7 @@
               </div>
               <div class="member-info">
                 <h4>Dr. PERCY HARDY HORNA LEÓN</h4>
-                <span>Presidente de la Corte Superior de Justica de Cajamarca</span>
+                <span>Presidente de la Corte Superior de Justica de Apurímac</span>
               </div>
             </div>
           </div><!-- End Team Member --> 
@@ -232,7 +232,7 @@
               </div>
               <div class="member-info">
                 <h4>Dr. PERCY HARDY HORNA LEÓN</h4>
-                <span>Presidente de la Corte Superior de Justica de Cajamarca</span>
+                <span>Presidente de la Corte Superior de Justica de Apurímac</span>
               </div>
             </div>
           </div><!-- End Team Member --> 
@@ -250,7 +250,7 @@
               </div>
               <div class="member-info">
                 <h4>Dr. PERCY HARDY HORNA LEÓN</h4>
-                <span>Presidente de la Corte Superior de Justica de Cajamarca</span>
+                <span>Presidente de la Corte Superior de Justica de Apurímac</span>
               </div>
             </div>
           </div><!-- End Team Member --> 
@@ -284,7 +284,7 @@
               </div>
               <div class="member-info">
                 <h4>Dr. PERCY HARDY HORNA LEÓN</h4>
-                <span>Presidente de la Corte Superior de Justica de Cajamarca</span>
+                <span>Presidente de la Corte Superior de Justica de Apurímac</span>
               </div>
             </div>
           </div><!-- End Team Member --> 
@@ -318,7 +318,7 @@
               </div>
               <div class="member-info">
                 <h4>Dr. PERCY HARDY HORNA LEÓN</h4>
-                <span>Presidente de la Corte Superior de Justica de Cajamarca</span>
+                <span>Presidente de la Corte Superior de Justica de Apurímac</span>
               </div>
             </div>
           </div><!-- End Team Member --> 

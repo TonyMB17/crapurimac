@@ -27,7 +27,7 @@
         <div class="icon flex-shrink-0"><i class="bi bi-check2-circle" style="color: #f51313;"></i></div>
         <div>
           <h4 class="title" style="color: #f51313">Objetivo 1</h4>
-          <p class="description">Fortalecer la implementación de lineamientos y estándares de cumplimiento en materia de integridad y lucha contra la corrupción en el departamento de Cajamarca.</p>
+          <p class="description">Fortalecer la implementación de lineamientos y estándares de cumplimiento en materia de integridad y lucha contra la corrupción en el departamento de Apurímac.</p>
         </div>
       </div>
       <!-- End Service Item -->
@@ -45,7 +45,7 @@
         <div class="icon flex-shrink-0"><i class="bi bi-check2-circle" style="color: #f51313;"></i></div>
         <div>
           <h4 class="title" style="color: #f51313">Objetivo 3</h4>
-          <p class="description">Incentivar y difundir una cultura de valores y principios de integridad pública en el departamento de Cajamarca.</p>
+          <p class="description">Incentivar y difundir una cultura de valores y principios de integridad pública en el departamento de Apurímac.</p>
         </div>
       </div>
       <!-- End Service Item -->
