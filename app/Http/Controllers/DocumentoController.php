@@ -57,7 +57,7 @@ class DocumentoController extends Controller
     public function show()
     {
         $documentos = Documento::all();
-        return view('marco', compact('documentos'));
+        return view('documentos.marco', compact('documentos'));
         //
     }
     public function update(Request $request, $id)
