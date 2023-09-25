@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DenunciaController;
 use App\Http\Controllers\NoticiasController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -67,6 +68,7 @@ Route::get('/contacto', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 
 Route::resource('noticias', NoticiasController::class);
 Route::resource('denuncias', DenunciaController::class);
