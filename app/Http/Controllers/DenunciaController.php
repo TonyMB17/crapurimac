@@ -40,6 +40,10 @@ class DenunciaController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'dni' => 'required|max:8'
+        ]);
+
         $denuncias = new Denuncia;
         $denuncias->dni = $request->input('dni');
         $denuncias->nombre = $request->input('nombre');

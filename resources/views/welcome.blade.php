@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-xl-4">
           <blockquote data-aos="fade-up" data-aos-delay="100">
-            <p>Implementaremos lineamientos y estándares de cumplimiento en materia de <span style="color: red;"><b>integridad y lucha contra la corrupción</b></span> en el
+            <p>Implementación de lineamientos y estándares de cumplimiento en materia de <span style="color: red;"><b>integridad y lucha contra la corrupción</b></span> en el
               departamento de Apurimíac</p>
           </blockquote>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
@@ -107,7 +107,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile mt-auto">
-                  <img src="assets/img/Instituciones Miembros/GRApurimac.png" class="testimonial-img" alt="">
+                  <img src="assets/img/Instituciones Miembros/logo-ab.png" class="testimonial-img" alt="">
                   <!-- <h3>Saul Goodman</h3>
                   <h4>Ceo &amp; Founder</h4> -->
                 </div>
@@ -117,7 +117,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile mt-auto">
-                  <img src="assets/img/Instituciones Miembros/MPAbancay.png" class="testimonial-img" alt="">
+                  <img src="assets/img/Instituciones Miembros/GOREAPU.png" class="testimonial-img" alt="">
                   <!-- <h3>Saul Goodman</h3>
                   <h4>Ceo &amp; Founder</h4> -->
                 </div>
@@ -127,7 +127,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile mt-auto">
-                  <img src="assets/img/Instituciones Miembros/CSJ.png" class="testimonial-img" alt="">
+                  <img src="assets/img/Instituciones Miembros/Poder_Judicial_del_Peru.png" class="testimonial-img" alt="">
                   <!-- <h3>Saul Goodman</h3>
                   <h4>Ceo &amp; Founder</h4> -->
                 </div>
@@ -137,7 +137,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile mt-auto">
-                  <img src="assets/img/Instituciones Miembros/MP Fiscalia de la Nacion.png" class="testimonial-img" alt="">
+                  <img src="assets/img/Instituciones Miembros/ministerio-publico.jpg" class="testimonial-img" alt="">
                   <!-- <h3>Saul Goodman</h3>
                   <h4>Ceo &amp; Founder</h4> -->
                 </div>
@@ -147,7 +147,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile mt-auto">
-                  <img src="assets/img/Instituciones Miembros/PGE.jpg" class="testimonial-img" alt="">
+                  <img src="assets/img/Instituciones Miembros/procuraduria.png" class="testimonial-img" alt="">
                   <!-- <h3>Saul Goodman</h3>
                   <h4>Ceo &amp; Founder</h4> -->
                 </div>

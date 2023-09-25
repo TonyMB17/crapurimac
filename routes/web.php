@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DenunciaController;
+use App\Http\Controllers\DocumentoController;
 use App\Http\Controllers\NoticiasController;
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
@@ -72,9 +73,12 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::resource('noticias', NoticiasController::class);
 Route::resource('denuncias', DenunciaController::class);
+Route::resource('documentos', DocumentoController::class);
 
 Route::get('/home/noticias', [NoticiasController::class, 'index'])->name('home.noticias');
 Route::get('/home/denuncias', [DenunciaController::class, 'index'])->name('home.denuncias');
 Route::get('/home/denuncias/pdf/{id}', [DenunciaController::class, 'pdf'])->name('home.denuncias.pdf');
+Route::get('/home/documentos', [DocumentoController::class, 'index'])->name('home.documentos');
+Route::get('/home/documento/show/{id}', [DenunciaController::class, 'pdf'])->name('home.documento.show');
 
 
