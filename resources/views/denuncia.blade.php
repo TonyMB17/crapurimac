@@ -85,13 +85,8 @@
                                               <div class="col-md-6 field mt-3 mt-md-0">
                                                   <div class="label">Correo</div>
                                                   <input name="correo" type="email" class="form-control" id="email" placeholder="Correo Electronico" onkeyup="validarEmail(this)" required> <br>
-<<<<<<< HEAD
-                                                  <a b id='resultado'></a>
-                                              </div>
-=======
                                                   <a id='resultado'></a>
                                                 </div>
->>>>>>> f64ec53738e5fc51699c7bcd8571ecf88fefa299
                                           </div>
                                           <div class="col-md-6 field">
                                               <button class="firstNext next" onclick="validarCorreo(form.correo.value)">Siguiente</button>
@@ -102,21 +97,12 @@
                                           <!-- <div class="title">Información de Contacto</div> -->
                                           <div class="field">
                                               <div class="label">Apellidos y Nombres</div>
-<<<<<<< HEAD
-                                              <input name="denunciado" type="text" class="form-control" id="recipient-name">
-                                          </div>
-                                          <div class="field">
-                                              <div class="label">Institución</div>
-                                              <input name="institucion" type="text" class="form-control" id="recipient-name">
-                                          </div>
-=======
                                               <input name="denunciado" type="text" class="form-control" id="recipient-name" required>
                                             </div>
                                           <div class="field">
                                               <div class="label">Institución</div>
                                               <input name="institucion" type="text" class="form-control" id="recipient-name" required>
                                             </div>
->>>>>>> f64ec53738e5fc51699c7bcd8571ecf88fefa299
                                           <div class="field">
                                               <div class="label">Cargo</div>
                                               <input name="cargo" type="text" class="form-control" id="recipient-name">
@@ -134,7 +120,6 @@
                                           </div>
                                           <div class="field">
                                               <div class="label">Descripción de los Hechos</div>
-<<<<<<< HEAD
                                               <input name="descripcion" type="text" class="form-control" id="recipient-name">
                                           </div>
                                           <div class="field">
@@ -151,14 +136,6 @@
                                               </span>
                                               @enderror
                                           </div>
-=======
-                                              <textarea name="descripcion" type="text" class="form-control" id="recipient-name" required></textarea>
-                                            </div>
-                                          <div class="field">
-                                              <div class="label">Testigos</div>
-                                              <textarea name="testigos" type="text" class="form-control" id="recipient-name" required></textarea>
-                                            </div>
->>>>>>> f64ec53738e5fc51699c7bcd8571ecf88fefa299
                                           <div class="field btns">
                                               <button class="prev-2 prev">Atrás</button>
                                               <button class="next-2 next">Enviar</button>
