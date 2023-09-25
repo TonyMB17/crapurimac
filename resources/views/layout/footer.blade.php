@@ -5,7 +5,7 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="#" class="logo d-flex align-items-center">
             <img src="{{ asset('/assets/img/LOGO.png') }}" alt="">
               <!-- <span>Nova</span> -->
             </a>

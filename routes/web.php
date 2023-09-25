@@ -15,9 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('Inicio');
+Route::get('/', [NoticiasController::class, 'show'])->name('Inicio');
 /*
 QUIENES SOMOS
 */
@@ -50,9 +48,7 @@ Route::get('/documentos/plan', function () {
 /*
 NOTICIAS
 */
-Route::get('/noticia', function () {
-    return view('noticias');
-})->name('noticias');
+Route::get('/noticia', [NoticiasController::class, 'show1'])->name('noticias');
 
 /*
 DENUNCIA
@@ -75,7 +71,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('noticias', NoticiasController::class);
 Route::resource('denuncias', DenunciaController::class);
 
-Route::get('/home/noticias', [App\Http\Controllers\NoticiasController::class, 'index'])->name('home.noticias');
-Route::get('/home/denuncias', [App\Http\Controllers\DenunciaController::class, 'index'])->name('home.denuncias');
+Route::get('/home/noticias', [NoticiasController::class, 'index'])->name('home.noticias');
+Route::get('/home/denuncias', [DenunciaController::class, 'index'])->name('home.denuncias');
+Route::get('/home/denuncias/pdf/{id}', [DenunciaController::class, 'pdf'])->name('home.denuncias.pdf');
 
 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Denuncia;
 use App\Models\Denunciante;
 use Illuminate\Http\Request;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class DenunciaController extends Controller
 {
@@ -15,6 +16,14 @@ class DenunciaController extends Controller
     {
         $denuncias = Denuncia::all();
         return view('admin.denuncias.index', compact('denuncias'));
+        //
+    }
+
+    public function pdf($id)
+    {    
+        $denuncia = Denuncia::find($id);  
+        $pdf = Pdf::loadView('admin.denuncias.pdf',compact('denuncia'));
+        return $pdf->stream();        
         //
     }
 

@@ -39,7 +39,7 @@
               <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="post-box">
                   <div class="post-img"><img src="assets/img/11289728.png" class="img-fluid" alt=""  style="width: 50%; height: auto;"></div>
-                  <h3 class="post-title" style="text-align: center;"><a href="blog-details.html" class="readmore stretched-link"><span>MARCO NORMATIVO</span></a></h3>
+                  <h3 class="post-title" style="text-align: center;"><a href="#" class="readmore stretched-link"><span>MARCO NORMATIVO</span></a></h3>
 
                 </div>
               </div>
@@ -47,7 +47,7 @@
               <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="post-box">
                   <div class="post-img"><img src="assets/img/hoja.png" class="img-fluid" alt=""   style="width: 50%; height: auto;"></div>
-                  <h3 class="post-title" style="text-align: center;"><a href="blog-details.html" class="readmore stretched-link"><span>PLAN ANUAL DE TRABAJO</span></a></h3>
+                  <h3 class="post-title" style="text-align: center;"><a href="#" class="readmore stretched-link"><span>PLAN ANUAL DE TRABAJO</span></a></h3>
                 </div>
               </div>
 
@@ -70,61 +70,21 @@
 
         <div class="row gy-5">
 
+          @foreach($noticias as $noticia)
+
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="post-box">
-              <div class="post-img"><img src="{{asset('/assets/img/blog/blog-1.jpg')}}" class="img-fluid" alt="">
+              <div class="post-img"><img src="{{$noticia->featured}}" class="img-fluid" alt="">
               </div>
               <div class="meta">
-                <span class="post-author">6 de septiembre de 2023 | 10:28 am</span>
+                <span class="post-author">{{$noticia->created_at}}</span>
                 <span class="post-date"> / NOTICIAS</span>
               </div>
-              <h3 class="post-title">Comisión Regional Anticorrupción de Cajamarca se Pronuncia en Lucha
-                Contra la Corrupción</h3>
-              <a href="blog-details.html" class="readmore stretched-link"><span></span></a>
+              <h3 class="post-title">{{$noticia->titulo}}</h3>
+              <a href="#" class="readmore stretched-link"><span></span></a>
             </div>
           </div>
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="post-box">
-              <div class="post-img"><img src="{{asset('/assets/img/blog/blog-1.jpg')}}" class="img-fluid" alt="">
-              </div>
-              <div class="meta">
-                <span class="post-author">6 de septiembre de 2023 | 10:28 am</span>
-                <span class="post-date"> / NOTICIAS</span>
-              </div>
-              <h3 class="post-title">Comisión Regional Anticorrupción de Cajamarca se Pronuncia en Lucha
-                Contra la Corrupción</h3>
-              <a href="blog-details.html" class="readmore stretched-link"><span></span></a>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="post-box">
-              <div class="post-img"><img src="{{asset('/assets/img/blog/blog-1.jpg')}}" class="img-fluid" alt="">
-              </div>
-              <div class="meta">
-                <span class="post-author">6 de septiembre de 2023 | 10:28 am</span>
-                <span class="post-date"> / NOTICIAS</span>
-              </div>
-              <h3 class="post-title">Comisión Regional Anticorrupción de Cajamarca se Pronuncia en Lucha
-                Contra la Corrupción</h3>
-              <a href="blog-details.html" class="readmore stretched-link"><span></span></a>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="post-box">
-              <div class="post-img"><img src="{{asset('/assets/img/blog/blog-1.jpg')}}" class="img-fluid" alt="">
-              </div>
-              <div class="meta">
-                <span class="post-author">6 de septiembre de 2023 | 10:28 am</span>
-                <span class="post-date"> / NOTICIAS</span>
-              </div>
-              <h3 class="post-title">Comisión Regional Anticorrupción de Cajamarca se Pronuncia en Lucha
-                Contra la Corrupción</h3>
-              <a href="blog-details.html" class="readmore stretched-link"><span></span></a>
-            </div>
-          </div>
+          @endforeach
 
         </div>
 

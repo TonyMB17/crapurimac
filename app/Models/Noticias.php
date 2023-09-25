@@ -10,6 +10,6 @@ class Noticias extends Model
     use HasFactory;
     protected $table = 'noticias';
     protected $primarykey = 'id';
-    protected $filleable = ['titulo','descripcion'];
+    protected $filleable = ['titulo','descripcion','featured'];
     protected $guarded = [];
 }

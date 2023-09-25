@@ -30,7 +30,20 @@ class NoticiasController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'featured' => 'required|image'
+        ]);
+
         $noticias = new Noticias;
+
+        if($request->hasFile('featured')){
+            $file=$request->file('featured');
+            $destinationPath = 'images/';
+            $filename = time() . '-' . $file->getClientOriginalName();
+            $file->move($destinationPath,$filename);
+            $noticias->featured = $destinationPath . $filename;
+        }
+
         $noticias->titulo = $request->input('titulo');
         $noticias->descripcion = $request->input('descripcion');
         $noticias->save();
@@ -42,8 +55,17 @@ class NoticiasController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Noticias $noticias)
+    public function show()
     {
+        $noticias = Noticias::all();
+        return view('welcome', compact('noticias'));
+        //
+    }
+
+    public function show1()
+    {
+        $noticias = Noticias::all();
+        return view('noticias', compact('noticias'));
         //
     }
 
