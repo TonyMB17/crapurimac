@@ -40,9 +40,7 @@ DOCUMENTOS
 Route::get('/documentos/actas', function () {
     return view('documentos.actas');
 })->name('actas');
-Route::get('/documentos/marco', function () {
-    return view('documentos.marco');
-})->name('marco');
+Route::get('/documentos/marco', [DocumentoController::class, 'show'])->name('marco');
 Route::get('/documentos/plan', function () {
     return view('documentos.plan');
 })->name('plan');
@@ -79,6 +77,5 @@ Route::get('/home/noticias', [NoticiasController::class, 'index'])->name('home.n
 Route::get('/home/denuncias', [DenunciaController::class, 'index'])->name('home.denuncias');
 Route::get('/home/denuncias/pdf/{id}', [DenunciaController::class, 'pdf'])->name('home.denuncias.pdf');
 Route::get('/home/documentos', [DocumentoController::class, 'index'])->name('home.documentos');
-Route::get('/home/documento/show/{id}', [DenunciaController::class, 'pdf'])->name('home.documento.show');
 
 
