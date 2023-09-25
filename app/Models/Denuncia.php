@@ -13,6 +13,6 @@ class Denuncia extends Model
     protected $filleable = ['dni','nombre','telefono','correo',
                             'denunciado','institucion',
                             'cargo','fecha','descripccion',
-                            'testigos'];
+                            'testigos','file'];
     protected $guarded = [];
 }

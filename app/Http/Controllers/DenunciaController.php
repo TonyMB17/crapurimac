@@ -41,7 +41,7 @@ class DenunciaController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'dni' => 'required|max:8'
+            'dni' => 'required'
         ]);
 
         $denuncias = new Denuncia;
@@ -55,6 +55,16 @@ class DenunciaController extends Controller
         $denuncias->fecha = $request->input('fecha');
         $denuncias->descripcion = $request->input('descripcion');
         $denuncias->testigos = $request->input('testigos');
+
+        if($request->hasFile('archivo')){
+            $file=$request->file('archivo');
+            $destinationPath = 'docs/';
+            $filename = time() . '-' . $file->getClientOriginalName();
+            $file->move($destinationPath,$filename);
+            $denuncias->file = $destinationPath . $filename;
+        }
+
+
         $denuncias->save();
 
         return redirect()->back();
