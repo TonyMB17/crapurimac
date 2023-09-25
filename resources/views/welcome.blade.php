@@ -34,12 +34,12 @@
         <section id="services-cards" class="services-cards">
           <div class="container aos-init aos-animate" data-aos="fade-up">
 
-            <div class="row gy-2" style="justify-content: center;">
+            <div class="row gy-2" style="justify-content: center; text-align: center">
 
               <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="post-box">
                   <div class="post-img"><img src="assets/img/11289728.png" class="img-fluid" alt=""  style="width: 50%; height: auto;"></div>
-                  <h3 class="post-title" style="text-align: center;"><a href="#" class="readmore stretched-link"><span>MARCO NORMATIVO</span></a></h3>
+                  <h3 class="post-title" style="text-align: center;"><a href="{{route('plan')}}" class="readmore stretched-link" style="justify-content: center;"><span>MARCO NORMATIVO</span></a></h3>
 
                 </div>
               </div>
@@ -47,7 +47,7 @@
               <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="post-box">
                   <div class="post-img"><img src="assets/img/hoja.png" class="img-fluid" alt=""   style="width: 50%; height: auto;"></div>
-                  <h3 class="post-title" style="text-align: center;"><a href="#" class="readmore stretched-link"><span>PLAN ANUAL DE TRABAJO</span></a></h3>
+                  <h3 class="post-title" style="text-align: center;"><a href="{{route('marco')}}" class="readmore stretched-link" style="justify-content: center;"><span>PLAN ANUAL DE TRABAJO</span></a></h3>
                 </div>
               </div>
 
