@@ -82,7 +82,7 @@
                     <li><a href="{{ route('denuncia') }}">DENUNCIA</a></li>
                     <li><a href="{{ route('contacto') }}">CONTACTO</a></li>
                     <li>
-                        <a href="{{ route('login') }}" class="btn-get-started">Ingresar</a>
+                        <a href="{{ route('login') }}" class="btn-get-started">INGRESAR</a>
                     </li>
 
                 </ul>
