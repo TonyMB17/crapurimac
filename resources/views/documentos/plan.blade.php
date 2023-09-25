@@ -24,7 +24,7 @@
               <h2>Plan de Trabajo</h2>
 
             </div>
-            <embed src="{{asset('/assets/pdf/PLAN-ANUAL-DE-TRABAJO-2022-CRAC-U.pdf')}}" type="application/pdf" width="420px" height="630px">
+            <embed src="{{asset('/assets/pdf/PLAN DE ANTICORRUPCION.pdf')}}" type="application/pdf" width="420px" height="630px">
           </div>
         </section><!-- End Why Choose Us Section -->
 
