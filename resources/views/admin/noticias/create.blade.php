@@ -10,7 +10,7 @@
             </div>
             <div class="modal-body">
 
-                <form action="{{route('home.store')}}" method="post">
+                <form action="{{route('noticias.store')}}" method="post">
                     @csrf
                     <div class="form-group">
                         <label for="recipient-name" class="col-form-label">Titulo:</label>

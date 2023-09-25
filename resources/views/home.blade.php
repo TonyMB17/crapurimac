@@ -17,6 +17,7 @@
 
     <!-- Custom styles for this template-->
     <link href="{{asset('/assets/admin/css/sb-admin-2.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
 
@@ -41,7 +42,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="{{route('home')}}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Administrador</span></a>
             </li>
@@ -57,16 +58,16 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="{{route('home.noticias')}}">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Noticias</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="{{route('home.denuncias')}}">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Documentos</span></a>
+                    <span>Denuncias</span></a>
             </li>
 
             <!-- Divider -->

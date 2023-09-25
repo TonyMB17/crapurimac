@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DenunciaController;
 use App\Http\Controllers\NoticiasController;
 use Illuminate\Support\Facades\Route;
 
@@ -49,7 +50,7 @@ Route::get('/documentos/plan', function () {
 /*
 NOTICIAS
 */
-Route::get('/noticias', function () {
+Route::get('/noticia', function () {
     return view('noticias');
 })->name('noticias');
 
@@ -66,8 +67,15 @@ CONTACTO
 Route::get('/contacto', function () {
     return view('contacto');
 })->name('contacto');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::resource('home', NoticiasController::class);
+Route::resource('noticias', NoticiasController::class);
+Route::resource('denuncias', DenunciaController::class);
+
+Route::get('/home/noticias', [App\Http\Controllers\NoticiasController::class, 'index'])->name('home.noticias');
+Route::get('/home/denuncias', [App\Http\Controllers\DenunciaController::class, 'index'])->name('home.denuncias');
+
+

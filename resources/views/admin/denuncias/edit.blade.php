@@ -10,7 +10,7 @@
             </div>
             <div class="modal-body">
 
-                <form action="{{route('noticias.update', $noticia->id)}}" method="post">
+                <form action="{{route('denuncias.update', $noticia->id)}}" method="post">
                     @csrf
                     @method('PUT')
                     <div class="form-group">
@@ -45,7 +45,7 @@
             </div>
             <div class="modal-body">
 
-                <form action="{{route('noticias.destroy', $noticia->id)}}" method="post">
+                <form action="{{route('home.destroy', $noticia->id)}}" method="post">
                     @csrf
                     @method('DELETE')
                         <label for="recipient-name" class="col-form-label">¿Esta seguro que desea eliminar?</label>
