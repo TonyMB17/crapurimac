@@ -32,10 +32,10 @@ class DocumentoController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nombre' => 'required',
-            'file' => 'required'
+            'nombre' => 'required|string|max:255',
+            'file' => 'required|file|mimes:pdf',
         ]);
-
+        
         $documentos = new Documento;
         $documentos->nombre = $request->input('nombre');
 

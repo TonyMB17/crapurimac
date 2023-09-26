@@ -58,7 +58,6 @@
             </tbody>
         </table>
         @include('admin.documentos.create')
-
     </div>
     <!-- /.container-fluid -->
 @endsection

@@ -15,15 +15,23 @@
                     @csrf
                     <div class="form-group">
                         <label for="recipient-name" class="col-form-label">Nombre:</label>
-                        <input name="nombre" type="text" class="form-control" id="recipient-name">
+                        <input name="nombre" type="text" class="form-control" id="recipient-name"
+                            value="{{ old('nombre') }}">
+                        @error('nombre')
+                            <br>
+                            <span class="text-danger">
+                                {{ $message }}
+                            </span>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label for="message-text" class="col-form-label">PDF:</label>
-                        <input name="file" type="file" class="form-control-file" id="exampleFormControlFile1" accept="application/pdf">
+                        <input name="file" type="file" class="form-control-file" id="exampleFormControlFile1"
+                            accept="application/pdf">
                         @error('file')
-                        <br>
+                            <br>
                             <span class="text-danger">
-                                {{$message}}
+                                {{ $message }}
                             </span>
                         @enderror
                     </div>

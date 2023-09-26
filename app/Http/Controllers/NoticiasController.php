@@ -31,7 +31,9 @@ class NoticiasController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'featured' => 'required|image'
+            'featured' => 'required|image',
+            'titulo' => 'required|string|max:255',
+            'descripcion' => 'required'
         ]);
 
         $noticias = new Noticias;
