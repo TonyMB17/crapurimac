@@ -120,11 +120,11 @@
                                           </div>
                                           <div class="field">
                                               <div class="label">Descripción de los Hechos</div>
-                                              <input name="descripcion" type="text" class="form-control" id="recipient-name">
+                                              <textarea name="descripcion" type="text" class="form-control" id="recipient-name"></textarea>
                                           </div>
                                           <div class="field">
                                               <div class="label">Testigos</div>
-                                              <input name="testigos" type="text" class="form-control" id="recipient-name">
+                                              <textarea name="testigos" type="text" class="form-control" id="recipient-name"></textarea>
                                           </div>
                                           <div class="field">
                                               <label for="message-text" class="label">Subir archivos:</label>
