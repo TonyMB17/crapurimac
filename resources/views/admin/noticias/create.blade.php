@@ -16,18 +16,31 @@
                     <div class="form-group">
                         <label for="recipient-name" class="col-form-label">Titulo:</label>
                         <input name="titulo" type="text" class="form-control" id="recipient-name">
+                        @error('titulo')
+                            <br>
+                            <span class="text-danger">
+                                {{ $message }}
+                            </span>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label for="message-text" class="col-form-label">Descripción:</label>
                         <textarea name="descripcion" class="form-control" id="message-text"></textarea>
+                        @error('descripcion')
+                            <br>
+                            <span class="text-danger">
+                                {{ $message }}
+                            </span>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label for="message-text" class="col-form-label">Imagen:</label>
-                        <input name="featured" type="file" class="form-control-file" id="exampleFormControlFile1" accept="image/*">
+                        <input name="featured" type="file" class="form-control-file" id="exampleFormControlFile1"
+                            accept="image/*">
                         @error('featured')
-                        <br>
+                            <br>
                             <span class="text-danger">
-                                {{$message}}
+                                {{ $message }}
                             </span>
                         @enderror
                     </div>

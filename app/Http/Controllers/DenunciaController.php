@@ -41,8 +41,21 @@ class DenunciaController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'dni' => 'required'
-        ]);
+            'dni' => 'required|string|max:8|min:8|regex:/^[0-9]{8}$/i',
+            'nombre' => 'required',
+            'telefono' => 'required|string|max:9|min:9|regex:/^[0-9]{9}$/i',
+            'correo' => 'required|email|string',
+            'denunciado' => 'required|string|max:255',
+            'institucion' => 'required|string|max:255',
+            'cargo' => 'required|string|max:255',
+            'fecha' => 'required',
+            'descripcion' => 'required',
+            'testigos' => 'required',
+            'archivo' => 'required'
+        ], $message =[
+            'dni.regex'=>'Solo se permiten numeros',
+            'telefono.regex'=>'Solo se permiten numeros'
+            ]);
 
         $denuncias = new Denuncia;
         $denuncias->dni = $request->input('dni');

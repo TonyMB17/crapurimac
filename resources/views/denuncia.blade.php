@@ -7,7 +7,8 @@
   <main id="main">
 
       <!-- ======= Breadcrumbs ======= -->
-      <div class="breadcrumbs d-flex align-items-center" style="background-image: url('{{ asset('/assets/img/CRAC-up.jpg') }}'">
+      <div class="breadcrumbs d-flex align-items-center"
+          style="background-image: url('{{ asset('/assets/img/CRAC-up.jpg') }}'">
           <div class="container position-relative d-flex flex-column align-items-center">
 
               <h2>DENUNCIAS</h2>
@@ -57,39 +58,71 @@
                                       </div>
                                       <div class="check fas fa-check"></div>
                                   </div>
-                                  <div class="step">
+                                  {{-- <div class="step">
                                       <p>Fin de <br> la Denuncia</p>
                                       <div class="bullet">
                                           <span>4</span>
                                       </div>
                                       <div class="check fas fa-check"></div>
-                                  </div>
+                                  </div> --}}
                               </div>
                               <div class="form-outer" align="center">
-                                  <form action="{{route('denuncias.store')}}" method="post" enctype="multipart/form-data">
+                                  <form action="{{ route('denuncias.store') }}" method="post"
+                                      enctype="multipart/form-data">
                                       @csrf
                                       <div class="page slide-page">
                                           <div class="field">
                                               <div class="label">DNI</div>
-                                              <input name="dni" type="number" class="form-control" id="recipient-name" placeholder="DNI" required>
+                                              <input name="dni" type="text" class="form-control"
+                                                  id="recipient-name" placeholder="DNI" value="{{ old('dni') }}">
+                                              @error('dni')
+                                                  <br><br>
+                                                  <span class="text-danger">
+                                                      {{ $message }}
+                                                  </span>
+                                              @enderror
                                           </div>
                                           <div class="field">
                                               <div class="label">Nombre</div>
-                                              <input name="nombre" type="text" class="form-control" id="message-text" placeholder="Nombre" required>
+                                              <input name="nombre" type="text" class="form-control"
+                                                  id="message-text" placeholder="Nombre" value="{{ old('nombre') }}">
+                                              @error('nombre')
+                                                  <br><br>
+                                                  <span class="text-danger">
+                                                      {{ $message }}
+                                                  </span>
+                                              @enderror
                                           </div>
                                           <div class="rowFormulario">
                                               <div class="col-md-6 field">
                                                   <div class="label">Teléfono</div>
-                                                  <input name="telefono" type="number" class="form-control" id="recipient-name" placeholder="Teléfono">
+                                                  <input name="telefono" type="text" class="form-control"
+                                                      id="recipient-name" placeholder="Teléfono"
+                                                      value="{{ old('telefono') }}">
+                                                  @error('telefono')
+                                                      <br><br>
+                                                      <span class="text-danger">
+                                                          {{ $message }}
+                                                      </span>
+                                                  @enderror
                                               </div>
                                               <div class="col-md-6 field mt-3 mt-md-0">
                                                   <div class="label">Correo</div>
-                                                  <input name="correo" type="email" class="form-control" id="email" placeholder="Correo Electronico" onkeyup="validarEmail(this)" required> <br>
+                                                  <input name="correo" type="text" class="form-control"
+                                                      id="correo" placeholder="Correo Electronico"
+                                                      onkeyup="validarEmail(this)" value="{{ old('correo') }}"> <br>
                                                   <a id='resultado'></a>
-                                                </div>
+                                                  @error('correo')
+                                                      <br><br>
+                                                      <span class="text-danger">
+                                                          {{ $message }}
+                                                      </span>
+                                                  @enderror
+                                              </div>
                                           </div>
                                           <div class="col-md-6 field">
-                                              <button class="firstNext next" onclick="validarCorreo(form.correo.value)">Siguiente</button>
+                                              <button class="firstNext next"
+                                                  onclick="validarCorreo(form.correo.value)">Siguiente</button>
                                           </div>
                                       </div>
 
@@ -97,15 +130,36 @@
                                           <!-- <div class="title">Información de Contacto</div> -->
                                           <div class="field">
                                               <div class="label">Apellidos y Nombres</div>
-                                              <input name="denunciado" type="text" class="form-control" id="recipient-name" required>
-                                            </div>
+                                              <input name="denunciado" type="text" class="form-control"
+                                                  id="recipient-name" value="{{ old('denunciado') }}">
+                                              @error('denunciado')
+                                                  <br><br>
+                                                  <span class="text-danger">
+                                                      {{ $message }}
+                                                  </span>
+                                              @enderror
+                                          </div>
                                           <div class="field">
                                               <div class="label">Institución</div>
-                                              <input name="institucion" type="text" class="form-control" id="recipient-name" required>
-                                            </div>
+                                              <input name="institucion" type="text" class="form-control"
+                                                  id="recipient-name" value="{{ old('institucion') }}">
+                                              @error('institucion')
+                                                  <br><br>
+                                                  <span class="text-danger">
+                                                      {{ $message }}
+                                                  </span>
+                                              @enderror
+                                          </div>
                                           <div class="field">
                                               <div class="label">Cargo</div>
-                                              <input name="cargo" type="text" class="form-control" id="recipient-name">
+                                              <input name="cargo" type="text" class="form-control"
+                                                  id="recipient-name" value="{{ old('cargo') }}">
+                                              @error('cargo')
+                                                  <br><br>
+                                                  <span class="text-danger">
+                                                      {{ $message }}
+                                                  </span>
+                                              @enderror
                                           </div>
                                           <div class="field btns">
                                               <button class="prev-1 prev">Atrás</button>
@@ -116,7 +170,14 @@
                                       <div class="page">
                                           <div class="field">
                                               <div class="label">Fecha</div>
-                                              <input name="fecha" type="date" class="form-control" id="recipient-name">
+                                              <input name="fecha" type="date" class="form-control"
+                                                  id="recipient-name" value="{{ old('fecha') }}">
+                                              @error('fecha')
+                                                  <br><br>
+                                                  <span class="text-danger">
+                                                      {{ $message }}
+                                                  </span>
+                                              @enderror
                                           </div>
                                           <div class="field">
                                               <div class="label">Descripción de los Hechos</div>
@@ -128,27 +189,28 @@
                                           </div>
                                           <div class="field">
                                               <label for="message-text" class="label">Subir archivos:</label>
-                                              <input name="archivo" type="file" class="form-control-file" id="exampleFormControlFile1">
-                                              @error('file')
-                                              <br>
-                                              <span class="text-danger">
-                                                  {{$message}}
-                                              </span>
+                                              <input name="archivo" type="file" class="form-control-file"
+                                                  id="exampleFormControlFile1" value="{{ old('archivo') }}">
+                                              @error('archivo')
+                                                  <br>
+                                                  <span class="text-danger">
+                                                      {{ $message }}
+                                                  </span>
                                               @enderror
                                           </div>
                                           <div class="field btns">
                                               <button class="prev-2 prev">Atrás</button>
-                                              <button class="next-2 next">Enviar</button>
+                                              <button class="submit">Enviar</button>
                                           </div>
                                       </div>
 
-                                      <div class="page">
+                                      {{-- <div class="page">
                                           <div class="title">Datos enviados</div>
                                           <div class="field btns">
                                               <!-- <button class="prev-3 prev">Atrás</button> -->
                                               <button class="submit">Finalizar</button>
                                           </div>
-                                      </div>
+                                      </div> --}}
                                   </form>
                               </div>
                           </div>
