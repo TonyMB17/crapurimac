@@ -61,7 +61,7 @@ class DenunciaController extends Controller
         $denuncias->dni = $request->input('dni');
         $denuncias->nombre = $request->input('nombre');
         $denuncias->telefono = $request->input('telefono');
-        $denuncias->correo = $request->input('correo');
+        $denuncias->correo = $request->input('correo');   
         $denuncias->denunciado = $request->input('denunciado');
         $denuncias->institucion = $request->input('institucion');
         $denuncias->cargo = $request->input('cargo');
@@ -79,6 +79,8 @@ class DenunciaController extends Controller
 
 
         $denuncias->save();
+
+        
 
         return redirect()->back();
         //
