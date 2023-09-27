@@ -72,7 +72,7 @@
                               @enderror
                           </div>
                           <div class="col-md-6 form-group mt-3 mt-md-0">
-                              <input type="email" class="form-control" name="email" id="email"
+                              <input type="text" class="form-control" name="email" id="email"
                                   placeholder="Correo" value="{{ old('correo') }}">
                               @error('email')
                                   <br>
