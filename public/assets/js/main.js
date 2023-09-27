@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
     speed: 600,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 3000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     speed: 600,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 3000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
@@ -232,19 +232,6 @@ el.addEventListener('mousemove', () => {
   `
 })
 
-
-// validaciones 
-
-// function validarCorreo(correo){
-//   var expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
-//   var esValidado = expReg.test(correo);
-//   if(esValidado == true){
-//     alert('El correo electronico es Válidado');
-//   }
-//   else{
-//     alert('El correo electronico NO es Válidado, Considere: example@gmail.com');
-//   }
-// }
 
 function validarEmail(elemento){
 

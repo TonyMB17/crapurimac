@@ -253,8 +253,9 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 80px;
   margin-right: 6px;
+  margin-left: 80px;
 }
 
 .header .logo h1 {
@@ -706,8 +707,8 @@ section {
 
 .about .content p {
   margin: 30px 0;
-  color: #29486a;
-  font-size: 1em;
+  color: #346396;
+  font-size: 1.2em;
   font-weight: 600;
 }
 
@@ -1120,7 +1121,7 @@ section {
   margin: 0 1px;
 }
 
-.testimonials .testimonial-item .testimonial-img {  
+.testimonials .testimonial-item .testimonial-img {
   height: 200px;
   /* border-radius: 50%; */
   border: 0px solid #0a0a0a;
@@ -2087,7 +2088,7 @@ section {
 }
 
 .footer .footer-content .footer-info .logo img {
-  max-height: 40px;
+  max-height: 80px;
   margin-right: 6px;
 }
 
@@ -2202,30 +2203,50 @@ section {
 
 
 /*      actas          */
-#poster {
-  height: 50px;
-  width: 2000;
-  transition: box-shadow 0.5s;
-  border-radius: 5px;
-  font-size: 1.3em
-}
-#poster:hover {
-  box-shadow: 0px 0px 50px rgb(0, 0, 0, 1)
-}
 
 #poster1 {
-  height: 80px;
-  width: 2000;
+  margin: 15px 5px 15px 5px;
+  padding: 5px 5px 5px 5px;
   transition: box-shadow 0.3s;
-  border-radius: 5px;
-  font-size: 1.3em
+  border-radius: 20px;
+  font-size: 1.3em;
+  box-shadow: 0px 0px 20px rgb(211, 211, 211)
 }
+
 #poster1:hover {
-  box-shadow: 0px 0px 50px rgb(0, 0, 0, 1)
+  box-shadow: 0px 0px 20px rgb(0, 0, 0, 1)
 }
 
 
 /*      Presentacion          */
 #borde {
   border-end-end-radius: 100px;
+}
+
+
+#poster2 {
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+/*          pdf    */
+
+#pdf{
+  color: #e72323;
+  font-size: 1.3em;
+  border-radius: 100%;
+  border: 2px solid red;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  
+  
+  /* color: #e72323;
+  font-size: 1.3em;
+  border-radius: 100%;
+  border: 2px solid red;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  display: inline-block; */
 }
