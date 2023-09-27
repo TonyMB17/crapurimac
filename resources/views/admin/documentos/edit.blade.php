@@ -10,7 +10,7 @@
             </div>
             <div class="modal-body">
 
-                <form action="{{route('documentos.update', $documento->id)}}" method="post">
+                <form action="{{route('documentos.update', $documento->id)}}" method="post" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
                     <div class="form-group">
@@ -19,13 +19,8 @@
                     </div>
                     <div class="form-group">
                         <label for="message-text" class="col-form-label">PDF:</label>
-                        <input name="file" type="file" class="form-control-file" id="exampleFormControlFile1" accept="application/pdf">
-                        @error('file')
-                        <br>
-                            <span class="text-danger">
-                                {{$message}}
-                            </span>
-                        @enderror
+                        <input name="file" type="file" class="form-control-file" id="exampleFormControlFile1"
+                            accept="application/pdf">                      
                     </div>
             </div>
             <div class="modal-footer">

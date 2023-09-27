@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Documento;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class DocumentoController extends Controller
 {
@@ -47,7 +48,6 @@ class DocumentoController extends Controller
             $documentos->file = $destinationPath . $filename;
         }
 
-
         $documentos->save();
 
         return redirect()->back();
@@ -62,10 +62,16 @@ class DocumentoController extends Controller
     }
     public function update(Request $request, $id)
     {
-        $documentos = Documento::find($id);
-        $documentos->nombre = $request->input('nombre');
+        $request->validate([
+            'nombre' => 'required|string|max:255',
+            'file' => 'file|mimes:pdf',
+        ]);
 
-        if($request->hasFile('file')){
+        $documentos = Documento::find($id);
+        
+        if($request->hasFile('file')){            
+            $oldFile = $documentos->file;
+            File::delete(public_path().'/'.$oldFile);
             $file=$request->file('file');
             $destinationPath = 'docs/';
             $filename = time() . '-' . $file->getClientOriginalName();
@@ -73,6 +79,8 @@ class DocumentoController extends Controller
             $documentos->file = $destinationPath . $filename;
         }
 
+        $documentos->nombre = $request->input('nombre');
+        
         $documentos->update();
 
         return redirect()->back();
@@ -81,6 +89,10 @@ class DocumentoController extends Controller
     public function destroy($id)
     {
         $documentos = Documento::find($id);
+
+        $oldFile = $documentos->file;
+        File::delete(public_path().'/'.$oldFile);
+
         $documentos->delete();
 
         return redirect()->back();

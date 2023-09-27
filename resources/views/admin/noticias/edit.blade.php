@@ -1,5 +1,5 @@
 <!-- Modal -->
-<div class="modal fade bd-example-modal-lg" id="edit{{$noticia->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade bd-example-modal-lg" id="Noticiaedit{{$noticia->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -10,16 +10,28 @@
             </div>
             <div class="modal-body">
 
-                <form action="{{route('noticias.update', $noticia->id)}}" method="post">
+                <form action="{{route('noticias.update', $noticia->id)}}" method="post" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
                     <div class="form-group">
                         <label for="recipient-name" class="col-form-label">Titulo:</label>
                         <input name="titulo" type="text" class="form-control" id="recipient-name" value="{{$noticia->titulo}}">
+                        @error('titulo')
+                            <br>
+                            <span class="text-danger">
+                                {{ $message }}
+                            </span>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label for="message-text" class="col-form-label">Descripción:</label>
                         <textarea name="descripcion" class="form-control" id="message-text">{{$noticia->descripcion}}</textarea>
+                        @error('descripcion')
+                            <br>
+                            <span class="text-danger">
+                                {{ $message }}
+                            </span>
+                        @enderror
                     </div>
             </div>
             <div class="modal-footer">
@@ -34,7 +46,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade bd-example-modal-lg" id="delete{{$noticia->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade bd-example-modal-lg" id="Noticiadelete{{$noticia->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">

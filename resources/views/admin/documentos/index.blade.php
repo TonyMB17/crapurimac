@@ -9,7 +9,7 @@
         </div>
 
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#create">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Documentocreate">
             <i class="fa fa-plus fa-sm"></i>
             Agregar
         </button>

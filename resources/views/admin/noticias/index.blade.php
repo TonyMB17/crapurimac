@@ -9,7 +9,7 @@
         </div>
 
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#create">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Noticiacreate">
             <i class="fa fa-plus fa-sm"></i>
             Agregar
         </button>
@@ -33,13 +33,13 @@
                         <td>{{ $noticia->created_at }}</td>
                         <td>
                             <button type="button" class="btn btn-success" data-toggle="modal"
-                                data-target="#edit{{ $noticia->id }}">
+                                data-target="#Noticiaedit{{ $noticia->id }}">
                                 <span class="material-symbols-outlined">
                                     edit
                                 </span>
                             </button>
                             <button type="button" class="btn btn-danger" data-toggle="modal"
-                                data-target="#delete{{ $noticia->id }}">
+                                data-target="#Noticiadelete{{ $noticia->id }}">
                                 <span class="material-symbols-outlined">
                                     delete
                                 </span>
@@ -51,7 +51,6 @@
             </tbody>
         </table>
         @include('admin.noticias.create')
-
     </div>
     <!-- /.container-fluid -->
 @endsection
