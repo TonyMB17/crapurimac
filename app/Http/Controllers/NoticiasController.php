@@ -86,7 +86,7 @@ class NoticiasController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'featured' => 'required|image',
+            'featured' => 'image',
             'titulo' => 'required|string|max:255',
             'descripcion' => 'required'
         ]);

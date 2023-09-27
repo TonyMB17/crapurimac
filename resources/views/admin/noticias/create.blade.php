@@ -15,7 +15,7 @@
                     @csrf
                     <div class="form-group">
                         <label for="recipient-name" class="col-form-label">Titulo:</label>
-                        <input name="titulo" type="text" class="form-control" id="recipient-name">
+                        <input name="titulo" type="text" class="form-control" id="recipient-name" value="{{old('titulo')}}">
                         @error('titulo')
                             <br>
                             <span class="text-danger">
@@ -25,7 +25,7 @@
                     </div>
                     <div class="form-group">
                         <label for="message-text" class="col-form-label">Descripción:</label>
-                        <textarea name="descripcion" class="form-control" id="message-text"></textarea>
+                        <textarea name="descripcion" class="form-control" id="message-text">{{old('descripcion')}}</textarea>
                         @error('descripcion')
                             <br>
                             <span class="text-danger">

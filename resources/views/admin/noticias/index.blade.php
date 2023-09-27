@@ -14,7 +14,7 @@
             Agregar
         </button>
         <br><br>
-
+<div style="overflow-x: scroll">
         <table class="table">
             <caption>Lista de noticias</caption>
             <thead>
@@ -26,7 +26,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($noticias as $noticia)
+                @foreach ($noticias->reverse() as $noticia)
                     <tr>
                         <th scope="row">{{ $noticia->id }}</th>
                         <td>{{ $noticia->titulo }}</td>
@@ -50,6 +50,7 @@
                 @endforeach
             </tbody>
         </table>
+    </div>
         @include('admin.noticias.create')
     </div>
     <!-- /.container-fluid -->

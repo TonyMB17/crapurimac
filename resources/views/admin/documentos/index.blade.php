@@ -14,7 +14,7 @@
             Agregar
         </button>
         <br><br>
-
+        <div style="overflow-x: scroll">
         <table class="table">
             <caption>Lista de documentos</caption>
             <thead>
@@ -26,7 +26,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($documentos as $documento)
+                @foreach ($documentos->reverse() as $documento)
                     <tr>
                         <th scope="row">{{ $documento->id }}</th>
                         <td>{{ $documento->nombre }}</td>
@@ -57,6 +57,7 @@
                 @endforeach
             </tbody>
         </table>
+    </div>
         @include('admin.documentos.create')
     </div>
     <!-- /.container-fluid -->

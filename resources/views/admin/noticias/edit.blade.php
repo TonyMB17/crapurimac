@@ -33,6 +33,17 @@
                             </span>
                         @enderror
                     </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Imagen:</label>
+                        <input name="featured" type="file" class="form-control-file" id="exampleFormControlFile1"
+                            accept="image/*">
+                        @error('featured')
+                            <br>
+                            <span class="text-danger">
+                                {{ $message }}
+                            </span>
+                        @enderror
+                    </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>

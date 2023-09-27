@@ -40,6 +40,8 @@ class DenunciaController extends Controller
      */
     public function store(Request $request)
     {
+        Denuncia::query()->update(['estado' => 0]);
+
         $request->validate([
             'dni' => 'required|string|max:8|min:8|regex:/^[0-9]{8}$/i',
             'nombre' => 'required',
@@ -68,6 +70,7 @@ class DenunciaController extends Controller
         $denuncias->fecha = $request->input('fecha');
         $denuncias->descripcion = $request->input('descripcion');
         $denuncias->testigos = $request->input('testigos');
+        $denuncias->estado = 1;
 
         if($request->hasFile('archivo')){
             $file=$request->file('archivo');
