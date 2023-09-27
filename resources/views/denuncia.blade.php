@@ -67,9 +67,8 @@
                                   </div> --}}
                               </div>
                               <div class="form-outer">
-                                  <form action="{{ route('denuncias.store') }}" method="post"
-                                      enctype="multipart/form-data">
-                                      @csrf
+                                  <form action="{{ route('denuncias.store') }}" method="post" enctype="multipart/form-data">
+                                  @csrf
                                       <div class="page slide-page">
                                           <div class="field">
                                               <div class="label">DNI</div>

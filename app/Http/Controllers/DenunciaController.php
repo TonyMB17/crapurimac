@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Denuncia;
-use App\Models\Denunciante;
 use Illuminate\Http\Request;
 use Barryvdh\DomPDF\Facade\Pdf;
 
@@ -80,10 +79,7 @@ class DenunciaController extends Controller
             $denuncias->file = $destinationPath . $filename;
         }
 
-
-        $denuncias->save();
-
-        
+        $denuncias->save();        
 
         return redirect()->back();
         //
