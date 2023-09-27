@@ -31,16 +31,16 @@
         <div class="row text-center" style="margin-bottom: 2rem;">
             <div class="col-xs-6">
                 <h3 class="h2">Denunciante</h3>
-                <strong>{{$denuncia->dni}}</strong><br>
-                <strong>{{$denuncia->nombre}}</strong><br>
-                <strong>{{$denuncia->telefono}}</strong><br>
-                <strong>{{$denuncia->correo}}</strong>
+                <span>DNI: <strong>{{$denuncia->dni}}</strong></span><br>
+                <span>NOMBRE: <strong>{{$denuncia->nombre}}</strong></span><br>
+                <span>TELEFONO: <strong>{{$denuncia->telefono}}</strong></span><br>
+                <span>EMAIL: <strong>{{$denuncia->correo}}</strong></span>
             </div>
             <div class="col-xs-6">
                 <h3 class="h2">Denunciado</h3>
-                <strong>{{$denuncia->denunciado}}</strong><br>
-                <strong>{{$denuncia->institucion}}</strong><br>
-                <strong>{{$denuncia->cargo}}</strong>
+                <span>NOMBRE: <strong>{{$denuncia->denunciado}}</strong></span><br>
+                <span>INSTITUCION: <strong>{{$denuncia->institucion}}</strong></span><br>
+                <span>CARGO: <strong>{{$denuncia->cargo}}</strong></span>
             </div>
         </div>
         <hr>
@@ -52,6 +52,13 @@
         <h3>Testigos</h3>
         <p>
             {{$denuncia->testigos}}
+        </p>
+        <hr>
+        <h3>Evidencia</h3>
+        <p>
+            <ul>
+                <li>{{$denuncia->file}}</li>
+            </ul>            
         </p>
         <div class="row">
             <div class="col-xs-12 text-center">

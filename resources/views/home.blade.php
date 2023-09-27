@@ -79,6 +79,12 @@
                     <span>Documentos</span></a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('home.mensajes') }}">
+                    <i class="fas fa-fw fa-envelope-open"></i>
+                    <span>Mensajes</span></a>
+            </li>
+
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 

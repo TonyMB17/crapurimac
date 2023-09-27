@@ -72,6 +72,13 @@ class NoticiasController extends Controller
         //
     }
 
+    public function detail($id)
+    {
+        $noticias = Noticias::find($id);
+        return view('detallenoticia', compact('noticias'));
+        //
+    }
+
     /**
      * Show the form for editing the specified resource.
      */
