@@ -27,17 +27,6 @@ nextBtnSec.addEventListener("click", function(event){
   progressText[current - 1].classList.add("active");
   current += 1;
 });
-<<<<<<< HEAD
-nextBtnThird.addEventListener("click", function(event){
-  event.preventDefault();
-  slidePage.style.marginLeft = "-75%";
-  bullet[current - 1].classList.add("active");
-  progressCheck[current - 1].classList.add("active");
-  progressText[current - 1].classList.add("active");
-  current += 1;
-});
-=======
->>>>>>> 819f8126a0bf6b3e30dafef5bf66c5cc613a67f8
 prevBtnSec.addEventListener("click", function(event){
   event.preventDefault();
   slidePage.style.marginLeft = "0%";
