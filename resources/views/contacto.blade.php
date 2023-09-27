@@ -73,7 +73,7 @@
                           </div>
                           <div class="col-md-6 form-group mt-3 mt-md-0">
                               <input type="text" class="form-control" name="email" id="email"
-                                  placeholder="Correo" value="{{ old('correo') }}">
+                                  placeholder="Correo" value="{{ old('email') }}">
                               @error('email')
                                   <br>
                                   <span class="text-danger">
