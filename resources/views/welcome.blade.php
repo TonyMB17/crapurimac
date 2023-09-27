@@ -114,7 +114,7 @@
               </div>
             </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <div class="swiper-slide altura">
               <div class="testimonial-item">
                 <div class="profile mt-auto">
                   <img src="assets/img/Instituciones Miembros/GOREAPU.png" class="testimonial-img" alt="">

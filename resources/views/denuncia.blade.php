@@ -181,23 +181,11 @@
                                           </div>
                                           <div class="field">
                                               <div class="label">Descripción de los Hechos</div>
-                                              <textarea name="descripcion" class="form-control" id="recipient-name" cols="30" rows="10">{{ old('descripcion') }}</textarea>
-                                              @error('descripcion')
-                                                  <br><br>
-                                                  <span class="text-danger">
-                                                      {{ $message }}
-                                                  </span>
-                                              @enderror
+                                              <textarea name="descripcion" type="text" class="form-control" id="recipient-name"></textarea>
                                           </div>
                                           <div class="field">
                                               <div class="label">Testigos</div>
-                                              <textarea name="testigos" class="form-control" id="recipient-name" cols="30" rows="10">{{ old('testigos') }}</textarea>
-                                              @error('testigos')
-                                                  <br><br>
-                                                  <span class="text-danger">
-                                                      {{ $message }}
-                                                  </span>
-                                              @enderror
+                                              <textarea name="testigos" type="text" class="form-control" id="recipient-name"></textarea>
                                           </div>
                                           <div class="field">
                                               <label for="message-text" class="label">Subir archivos:</label>

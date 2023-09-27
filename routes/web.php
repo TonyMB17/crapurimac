@@ -49,7 +49,9 @@ Route::get('/documentos/plan', function () {
 NOTICIAS
 */
 Route::get('/noticia', [NoticiasController::class, 'show1'])->name('noticias');
-
+Route::get('/detallenoticia', function () {
+    return view('detallenoticia');
+})->name('detallenoticia');
 /*
 DENUNCIA
 */

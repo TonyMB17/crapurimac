@@ -62,7 +62,7 @@ h6 {
 --------------------------------------------------------------*/
 section {
   overflow: hidden;
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 .section-header {
@@ -457,7 +457,7 @@ section {
   }
 
   .mobile-nav-show {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(68, 65, 65, 0.9);
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
@@ -985,6 +985,13 @@ section {
   overflow: hidden;
 }
 
+.team .team-member .member-img .img-fluid {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  width: 300px;
+}
+
 .team .team-member .social {
   position: absolute;
   left: 0;
@@ -1113,9 +1120,10 @@ section {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 180px;
+  width: 200px;
+  height: 200px;
   /* border-radius: 50%; */
-  border: 0.01px solid #0a0a0a;
+  border: 0px solid #0a0a0a;
   margin: auto;
   border: 50%;
 }
@@ -1157,6 +1165,7 @@ section {
 .testimonials .swiper-slide {
   opacity: 0.3;
 }
+
 
 @media (max-width: 1199px) {
   .testimonials .swiper-slide-active {
