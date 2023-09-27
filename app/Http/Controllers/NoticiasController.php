@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Noticias;
+use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
 
 class NoticiasController extends Controller
@@ -38,11 +39,11 @@ class NoticiasController extends Controller
 
         $noticias = new Noticias;
 
-        if($request->hasFile('featured')){
-            $file=$request->file('featured');
+        if ($request->hasFile('featured')) {
+            $file = $request->file('featured');
             $destinationPath = 'images/';
             $filename = time() . '-' . $file->getClientOriginalName();
-            $file->move($destinationPath,$filename);
+            $file->move($destinationPath, $filename);
             $noticias->featured = $destinationPath . $filename;
         }
 
@@ -71,6 +72,13 @@ class NoticiasController extends Controller
         //
     }
 
+    public function detail($id)
+    {
+        $noticias = Noticias::find($id);
+        return view('detallenoticia', compact('noticias'));
+        //
+    }
+
     /**
      * Show the form for editing the specified resource.
      */
@@ -84,7 +92,24 @@ class NoticiasController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $request->validate([
+            'featured' => 'image',
+            'titulo' => 'required|string|max:255',
+            'descripcion' => 'required'
+        ]);
+
         $noticias = Noticias::find($id);
+
+        if ($request->hasFile('featured')) {
+            $oldFile = $noticias->featured;
+            File::delete(public_path() . '/' . $oldFile);
+            $file = $request->file('featured');
+            $destinationPath = 'images/';
+            $filename = time() . '-' . $file->getClientOriginalName();
+            $file->move($destinationPath, $filename);
+            $noticias->featured = $destinationPath . $filename;
+        }
+
         $noticias->titulo = $request->input('titulo');
         $noticias->descripcion = $request->input('descripcion');
         $noticias->update();
@@ -99,6 +124,10 @@ class NoticiasController extends Controller
     public function destroy($id)
     {
         $noticias = Noticias::find($id);
+
+        $oldFile = $noticias->featured;
+        File::delete(public_path() . '/' . $oldFile);
+
         $noticias->delete();
 
         return redirect()->back();

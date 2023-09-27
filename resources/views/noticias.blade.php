@@ -31,14 +31,14 @@
 
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="post-box">
-              <div class="post-img"><img src="{{$noticia->featured}}" class="img-fluid" alt="">
+              <div class="post-img"><img src="{{ asset($noticia->featured) }}" class="img-fluid" alt="">
               </div>
               <div class="meta">
-                <span class="post-author">{{$noticia->created_at}}</span>
+                <span class="post-author">{{$noticia->created_at->format('d F Y')}} / {{$noticia->created_at->format('g:i a')}}</span>
                 <span class="post-date"> / NOTICIAS</span>
               </div>
               <h3 class="post-title">{{$noticia->titulo}}</h3>
-              <a href="#" class="readmore stretched-link"><span></span></a>
+              <a href="{{ route('detallenoticia',$noticia->id)}}" class="readmore stretched-link"><span></span></a>
             </div>
           </div>
           @endforeach

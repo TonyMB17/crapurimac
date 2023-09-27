@@ -9,7 +9,7 @@
     </div>
 
     <!-- Button trigger modal -->
-
+    <div style="overflow-x: scroll">
     <table class="table">
         <caption>Lista de denuncias</caption>
         <thead>
@@ -21,12 +21,13 @@
                 <th scope="col">Institucion</th>
                 <th scope="col">Cargo</th>
                 <th scope="col">Fecha</th>
+                <th scope="col">Revisado</th>
                 <th scope="col">Archivo</th>
                 <th scope="col">Ver</th>
             </tr>
         </thead>
         <tbody>
-            @foreach ($denuncias as $denuncia)
+            @foreach ($denuncias->reverse() as $denuncia)
             <tr>
                 <th scope="row">{{ $denuncia->id }}</th>
                 <td>{{ $denuncia->nombre }}</td>
@@ -35,6 +36,17 @@
                 <td>{{ $denuncia->institucion }}</td>
                 <th>{{ $denuncia->cargo }}</th>
                 <td>{{ $denuncia->fecha }}</td>
+                <td>                    
+                    @if ($denuncia->estado == 0)
+                    <span class="material-symbols-outlined" style="color: rgb(114, 240, 42)">
+                        check
+                    </span>
+                    @else
+                    <span class="material-symbols-outlined" style="color: rgb(240, 42, 42)">
+                        pending
+                    </span>
+                    @endif
+                </td>
                 <td><a href="{{ asset('/'.$denuncia->file)}}" target="_blank">
                     <button type="button" class="btn btn-light">
                         <span class="material-symbols-outlined">
@@ -55,7 +67,7 @@
             @endforeach
         </tbody>
     </table>
-
+</div>
 </div>
 <!-- /.container-fluid -->
 @endsection

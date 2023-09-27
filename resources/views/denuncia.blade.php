@@ -66,7 +66,7 @@
                                       <div class="check fas fa-check"></div>
                                   </div> --}}
                               </div>
-                              <div class="form-outer" align="center">
+                              <div class="form-outer">
                                   <form action="{{ route('denuncias.store') }}" method="post"
                                       enctype="multipart/form-data">
                                       @csrf
@@ -181,11 +181,23 @@
                                           </div>
                                           <div class="field">
                                               <div class="label">Descripción de los Hechos</div>
-                                              <textarea name="descripcion" type="text" class="form-control" id="recipient-name"></textarea>
+                                              <textarea name="descripcion" type="text" class="form-control" id="recipient-name">{{ old('descripcion') }}</textarea>
+                                              @error('descripcion')
+                                              <br><br>
+                                              <span class="text-danger">
+                                                  {{ $message }}
+                                              </span>
+                                          @enderror
                                           </div>
                                           <div class="field">
                                               <div class="label">Testigos</div>
-                                              <textarea name="testigos" type="text" class="form-control" id="recipient-name"></textarea>
+                                              <textarea name="testigos" type="text" class="form-control" id="recipient-name">{{ old('testigos') }}</textarea>
+                                              @error('testigos')
+                                              <br><br>
+                                              <span class="text-danger">
+                                                  {{ $message }}
+                                              </span>
+                                          @enderror
                                           </div>
                                           <div class="field">
                                               <label for="message-text" class="label">Subir archivos:</label>
@@ -204,13 +216,6 @@
                                           </div>
                                       </div>
 
-                                      {{-- <div class="page">
-                                          <div class="title">Datos enviados</div>
-                                          <div class="field btns">
-                                              <!-- <button class="prev-3 prev">Atrás</button> -->
-                                              <button class="submit">Finalizar</button>
-                                          </div>
-                                      </div> --}}
                                   </form>
                               </div>
                           </div>

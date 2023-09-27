@@ -27,6 +27,7 @@ nextBtnSec.addEventListener("click", function(event){
   progressText[current - 1].classList.add("active");
   current += 1;
 });
+<<<<<<< HEAD
 // nextBtnThird.addEventListener("click", function(event){
 //   event.preventDefault();
 //   slidePage.style.marginLeft = "-75%";
@@ -46,6 +47,16 @@ nextBtnSec.addEventListener("click", function(event){
 //   },800);
 // });
 
+=======
+nextBtnThird.addEventListener("click", function(event){
+  event.preventDefault();
+  slidePage.style.marginLeft = "-75%";
+  bullet[current - 1].classList.add("active");
+  progressCheck[current - 1].classList.add("active");
+  progressText[current - 1].classList.add("active");
+  current += 1;
+});
+>>>>>>> e1498fc1643361df43958cc3585ca1a99c55b20b
 prevBtnSec.addEventListener("click", function(event){
   event.preventDefault();
   slidePage.style.marginLeft = "0%";
@@ -62,6 +73,7 @@ prevBtnThird.addEventListener("click", function(event){
   progressText[current - 2].classList.remove("active");
   current -= 1;
 });
+<<<<<<< HEAD
 // prevBtnFourth.addEventListener("click", function(event){
 //   event.preventDefault();
 //   slidePage.style.marginLeft = "-50%";
@@ -70,3 +82,5 @@ prevBtnThird.addEventListener("click", function(event){
 //   progressText[current - 2].classList.remove("active");
 //   current -= 1;
 // });
+=======
+>>>>>>> e1498fc1643361df43958cc3585ca1a99c55b20b

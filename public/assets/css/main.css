@@ -990,6 +990,7 @@ section {
   overflow: hidden;
   height: 400px;
   width: 300px;
+  object-fit: cover;
 }
 
 .team .team-member .social {
@@ -1119,8 +1120,7 @@ section {
   margin: 0 1px;
 }
 
-.testimonials .testimonial-item .testimonial-img {
-  width: 200px;
+.testimonials .testimonial-item .testimonial-img {  
   height: 200px;
   /* border-radius: 50%; */
   border: 0px solid #0a0a0a;

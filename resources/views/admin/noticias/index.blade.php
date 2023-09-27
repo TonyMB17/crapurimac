@@ -9,12 +9,12 @@
         </div>
 
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#create">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Noticiacreate">
             <i class="fa fa-plus fa-sm"></i>
             Agregar
         </button>
         <br><br>
-
+<div style="overflow-x: scroll">
         <table class="table">
             <caption>Lista de noticias</caption>
             <thead>
@@ -26,20 +26,20 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($noticias as $noticia)
+                @foreach ($noticias->reverse() as $noticia)
                     <tr>
                         <th scope="row">{{ $noticia->id }}</th>
                         <td>{{ $noticia->titulo }}</td>
                         <td>{{ $noticia->created_at }}</td>
                         <td>
                             <button type="button" class="btn btn-success" data-toggle="modal"
-                                data-target="#edit{{ $noticia->id }}">
+                                data-target="#Noticiaedit{{ $noticia->id }}">
                                 <span class="material-symbols-outlined">
                                     edit
                                 </span>
                             </button>
                             <button type="button" class="btn btn-danger" data-toggle="modal"
-                                data-target="#delete{{ $noticia->id }}">
+                                data-target="#Noticiadelete{{ $noticia->id }}">
                                 <span class="material-symbols-outlined">
                                     delete
                                 </span>
@@ -50,8 +50,8 @@
                 @endforeach
             </tbody>
         </table>
+    </div>
         @include('admin.noticias.create')
-
     </div>
     <!-- /.container-fluid -->
 @endsection
