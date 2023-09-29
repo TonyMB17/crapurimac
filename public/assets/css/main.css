@@ -2234,8 +2234,8 @@ section {
 #pdf{
   color: #e72323;
   font-size: 1.3em;
-  border-radius: 100%;
-  border: 2px solid red;
+  /* border-radius: 100%; */
+  /* border: 2px solid red; */
   width: 50px;
   height: 50px;
   text-align: center;
@@ -2249,4 +2249,14 @@ section {
   height: 1em;
   position: relative;
   display: inline-block; */
+}
+
+
+/* validación  */
+
+.mensaje-invalido {
+  color: red; /* Puedes cambiar el color aquí */
+}
+.mensaje-valido {
+  color: rgb(0, 255, 34); /* Puedes cambiar el color aquí */
 }

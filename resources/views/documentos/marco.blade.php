@@ -28,10 +28,7 @@
             <a href="{{ asset('/'.$documento->file)}}" target="_blank">
               <div class="icon-list d-flex" >
                 <div id="pdf" >
-                  <i style="width: 1em;
-    height: 1em;
-    position: relative;
-    display: block;" class="bi bi-file-earmark-pdf-fill" ></i>
+                  <i  class="bi bi-file-earmark-pdf-fill" ></i>
                 </div >
                 <div style="display: flex; align-items:center">
                   <span style="margin-left: 1em; color:rgb(37, 37, 37); font-size: 18px;">{{$documento->nombre}}</span>

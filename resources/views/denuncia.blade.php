@@ -84,7 +84,7 @@
                                           <div class="field">
                                               <div class="label">Nombre</div>
                                               <input name="nombre" type="text" class="form-control"
-                                                  id="message-text" placeholder="Nombre" value="{{ old('nombre') }}">
+                                                  id="message-text"  placeholder="Nombre" value="{{ old('nombre') }}"> 
                                               @error('nombre')
                                                   <br><br>
                                                   <span class="text-danger">
@@ -96,7 +96,7 @@
                                               <div class="col-md-6 field">
                                                   <div class="label">Teléfono</div>
                                                   <input name="telefono" type="text" class="form-control"
-                                                      id="recipient-name" placeholder="Teléfono"
+                                                      id="campo" placeholder="Teléfono"
                                                       value="{{ old('telefono') }}">
                                                   @error('telefono')
                                                       <br><br>
@@ -109,8 +109,7 @@
                                                   <div class="label">Correo</div>
                                                   <input name="correo" type="text" class="form-control"
                                                       id="correo" placeholder="Correo Electronico"
-                                                      onkeyup="validarEmail(this)" value="{{ old('correo') }}"> <br>
-                                                  <a id='resultado'></a>
+                                                      value="{{ old('correo') }}"> 
                                                   @error('correo')
                                                       <br><br>
                                                       <span class="text-danger">
@@ -120,8 +119,7 @@
                                               </div>
                                           </div>
                                           <div class="col-md-6 field">
-                                              <button class="firstNext next"
-                                                  onclick="validarCorreo(form.correo.value)">Siguiente</button>
+                                              <button class="firstNext next">Siguiente</button>
                                           </div>
                                       </div>
 
