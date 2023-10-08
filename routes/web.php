@@ -75,7 +75,7 @@ Route::resource('mensajes', MensajeController::class);
 
 Route::group(['middleware' => 'auth'], function () {
     // Rutas protegidas...
-Route::get('/home', [App\Http\Controllers\NoticiasController::class, 'index'])->name('home');
+Route::get('/home', [NoticiasController::class, 'index'])->name('home');
 Route::get('/home/noticias', [NoticiasController::class, 'index'])->name('home.noticias');
 Route::get('/home/denuncias', [DenunciaController::class, 'index'])->name('home.denuncias');
 Route::get('/home/denuncias/pdf/{id}', [DenunciaController::class, 'pdf'])->name('home.denuncias.pdf');
