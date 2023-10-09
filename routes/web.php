@@ -62,27 +62,32 @@ Route::get('/denuncia', function () {
 /*
 CONTACTO
 */
-Route::get('/contacto', function () {
-    return view('contacto');
-})->name('contacto');
+// Route::get('/contacto', function () {
+//     return view('contacto');
+// })->name('contacto');
+Route::get('/contacto', [MensajeController::class, 'show'])->name('contacto');
 
 Auth::routes();
 
-
+Route::resource('home/denuncias', DenunciaController::class);
+// Route::resource('mensajes', MensajeController::class);
+Route::post('mensajes', [MensajeController::class, 'store'])->name('mensajes.store');
 
 Route::group(['middleware' => 'auth'], function () {
     // Rutas protegidas...
-    Route::resource('noticias', NoticiasController::class);
-    Route::resource('home/denuncias', DenunciaController::class);
-    Route::resource('documentos', DocumentoController::class);
-    Route::resource('mensajes', MensajeController::class);
+    Route::resource('noticias', NoticiasController::class);    
+    Route::resource('documentos', DocumentoController::class);    
 
     Route::get('/home', [NoticiasController::class, 'index'])->name('home');
+
     Route::get('/home/noticias', [NoticiasController::class, 'index'])->name('home.noticias');
+
     Route::get('/home/denuncias', [DenunciaController::class, 'index'])->name('home.denuncias');
     Route::get('/home/denuncias/pdf/{id}', [DenunciaController::class, 'pdf'])->name('home.denuncias.pdf');
     Route::get('/home/denuncias/answer/{id}', [DenunciaController::class, 'answer'])->name('home.denuncias.answer');
     Route::post('/home/denuncias/{id}', [DenunciaController::class, 'checked'])->name('denuncias.checked');
+
     Route::get('/home/documentos', [DocumentoController::class, 'index'])->name('home.documentos');
+
     Route::get('/home/mensajes', [MensajeController::class, 'index'])->name('home.mensajes');
 });

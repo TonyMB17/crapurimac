@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- Custom styles for this page -->
     <link href="{{asset('/assets/admin/vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
-
 </head>
 
 <body id="page-top">

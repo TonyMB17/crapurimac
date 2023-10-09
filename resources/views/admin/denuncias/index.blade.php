@@ -17,12 +17,12 @@
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
-                            <tr>
+                            <tr>                                
+                                <th>Fecha</th>
                                 <th>Denunciante</th>
                                 <th>Denunciado</th>
                                 <th>Cargo</th>
                                 <th>Institucion</th>
-                                <th>Fecha</th>
                                 <th>Revisado</th>
                                 <th>Archivo</th>
                                 <th>Ver</th>
@@ -30,11 +30,11 @@
                         </thead>
                         <tfoot>
                             <tr>
+                                <th>Fecha</th>
                                 <th>Denunciante</th>
                                 <th>Denunciado</th>
                                 <th>Cargo</th>
                                 <th>Institucion</th>
-                                <th>Fecha</th>
                                 <th>Revisado</th>
                                 <th>Archivo</th>
                                 <th>Ver</th>
@@ -43,11 +43,11 @@
                         <tbody>
                             @foreach ($denuncias->reverse() as $denuncia)
                                 <tr>
+                                    <td>{{ $denuncia->created_at }}</td>
                                     <td>{{ $denuncia->nombre }}</td>
                                     <td>{{ $denuncia->denunciado }}</td>
                                     <td>{{ $denuncia->cargo }}</td>
-                                    <th>{{ $denuncia->institucion }}</th>
-                                    <td>{{ $denuncia->fecha }}</td>
+                                    <td>{{ $denuncia->institucion }}</td>
                                     <td>
                                         @if ($denuncia->estado == 0)
                                             <a href="#" class="btn btn-success btn-icon-split">

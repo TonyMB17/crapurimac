@@ -58,7 +58,7 @@
 
                   </div>
 
-                  <form action="{{ route('mensajes.store') }}" method="post" class="email-form">
+                  <form action="{{ route('mensajes.store') }}" method="POST" class="email-form">
                       @csrf
                       <div class="row">
                           <div class="col-md-6 form-group">
@@ -112,8 +112,8 @@
                         width: 100%;">Enviar
                               Mensaje</button>
                       </div>
-                  </form>
-
+                      @include('components.flash_alerts')
+                  </form>                  
               </div><!-- End Contact Form -->
 
           </div>
@@ -139,6 +139,6 @@
 
   </main><!-- End #main -->
 
-
+  <script src="{{ asset('/assets/js/script.js') }}"></script>
   <!-- footer -->
   @include('layout.footer')

@@ -22,7 +22,6 @@
 
               <div class="section-header">
                   <h2>Denuncias</h2>
-
               </div>
 
               <div class="row gy-4" data-aos="fade-up">
@@ -30,6 +29,7 @@
                       <h4><strong>HAZ TU DENUNCIA</strong></h4>
                       <p>Para realizar su denuncia llene los datos que en el formulario se piden. Sus datos serán
                           tratados de manera confidencial.</p>
+                      @include('components.flash_alerts')
                   </div>
                   <div class="col-lg-8">
                       <div class="content ps-lg-5">
@@ -67,8 +67,9 @@
                                   </div> --}}
                               </div>
                               <div class="form-outer">
-                                  <form action="{{ route('denuncias.store') }}" method="post" enctype="multipart/form-data">
-                                  @csrf
+                                  <form action="{{ route('denuncias.store') }}" method="post"
+                                      enctype="multipart/form-data">
+                                      @csrf
                                       <div class="page slide-page">
                                           <div class="field">
                                               <div class="label">DNI</div>
@@ -84,7 +85,7 @@
                                           <div class="field">
                                               <div class="label">Nombre</div>
                                               <input name="nombre" type="text" class="form-control"
-                                                  id="message-text"  placeholder="Nombre" value="{{ old('nombre') }}"> 
+                                                  id="message-text" placeholder="Nombre" value="{{ old('nombre') }}">
                                               @error('nombre')
                                                   <br><br>
                                                   <span class="text-danger">
@@ -109,7 +110,7 @@
                                                   <div class="label">Correo</div>
                                                   <input name="correo" type="text" class="form-control"
                                                       id="correo" placeholder="Correo Electronico"
-                                                      value="{{ old('correo') }}"> 
+                                                      value="{{ old('correo') }}">
                                                   @error('correo')
                                                       <br><br>
                                                       <span class="text-danger">
@@ -180,21 +181,21 @@
                                               <div class="label">Descripción de los Hechos</div>
                                               <textarea name="descripcion" type="text" class="form-control" id="recipient-name">{{ old('descripcion') }}</textarea>
                                               @error('descripcion')
-                                              <br><br>
-                                              <span class="text-danger">
-                                                  {{ $message }}
-                                              </span>
-                                          @enderror
+                                                  <br><br>
+                                                  <span class="text-danger">
+                                                      {{ $message }}
+                                                  </span>
+                                              @enderror
                                           </div>
                                           <div class="field">
                                               <div class="label">Testigos</div>
                                               <textarea name="testigos" type="text" class="form-control" id="recipient-name">{{ old('testigos') }}</textarea>
                                               @error('testigos')
-                                              <br><br>
-                                              <span class="text-danger">
-                                                  {{ $message }}
-                                              </span>
-                                          @enderror
+                                                  <br><br>
+                                                  <span class="text-danger">
+                                                      {{ $message }}
+                                                  </span>
+                                              @enderror
                                           </div>
                                           <div class="field">
                                               <label for="message-text" class="label">Subir archivos:</label>

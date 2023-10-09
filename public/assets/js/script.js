@@ -41,5 +41,15 @@ prevBtnThird.addEventListener("click", function(event){
   current -= 1;
 });
 
+var div = document.getElementById('alert');
+
+// Función para ocultar el div
+function ocultarDiv() {
+    div.style.display = 'none';
+}
+
+// Llama a la función ocultarDiv después de 3000 milisegundos (3 segundos)
+setTimeout(ocultarDiv, 5000);
+
 
 

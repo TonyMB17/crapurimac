@@ -81,7 +81,7 @@ class DenunciaController extends Controller
 
         $denuncias->save();        
 
-        return redirect()->back();
+        return redirect()->back()->with('message','Se ha registrado su denuncia.');
         //
     }
 
