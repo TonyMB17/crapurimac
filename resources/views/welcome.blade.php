@@ -41,7 +41,7 @@
                               <a href="{{ route('marco') }}" class="readmore stretched-link"
                                   style="justify-content: center;">
                                   <div class="post-box">
-                                      <div class="post-img"><img src="assets/img/11289728.png" class="img-fluid"
+                                      <div class="post-img"><img src="assets/img/Sin título-2.jpg" class="img-fluid"
                                               alt="" style="width: 50%; height: auto;"></div>
                                       <h3 class="post-title" style="text-align: center;"><span>MARCO NORMATIVO</span>
                                       </h3>
@@ -54,7 +54,7 @@
                               <a href="{{ route('plan') }}" class="readmore stretched-link"
                                   style="justify-content: center;">
                                   <div class="post-box">
-                                      <div class="post-img"><img src="assets/img/hoja.png" class="img-fluid"
+                                      <div class="post-img"><img src="assets/img/Sin título-3.jpg" class="img-fluid"
                                               alt="" style="width: 50%; height: auto;"></div>
                                       <h3 class="post-title" style="text-align: center;"><span>PLAN ANUAL DE
                                               TRABAJO</span></h3>
