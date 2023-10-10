@@ -15,20 +15,18 @@
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
       <div class="container" data-aos="fade-up">
-      <div>
-          <div id="poster1" class="marco">
-            <a href="{{ asset('/assets/pdf/ACTA DE INSTALACION  C.R.A.pdf')}}" target="_blank">
-              <div class="icon-list d-flex" >
-                <div id="pdf" >
-                  <i  class="bi bi-file-earmark-pdf-fill" ></i>
-                </div >
-                <div style="display: flex; align-items:center">
-                  <span style="margin-left: 1em; color:rgb(37, 37, 37); font-size: 18px;">Acta de instalacion C.R.A.</span>
-                </div>
-              </div><!-- End Icon List Item-->
-            </a>
+
+        <!-- ======= Why Choose Us Section ======= -->
+        <section id="why-us" class="why-us">
+          <div class="row m-4">
+
+            <div class="section-header">
+              <h2>Actas</h2>
+              <h3>Acta de Primera Reunión Comisión Anticorupción de Apurímac</h3>
+            </div>
+            <embed src="{{ asset('/assets/pdf/ACTA DE INSTALACION  C.R.A.pdf')}}" type="application/pdf" width="420px" height="630px">
           </div>
-        </div>
+        </section><!-- End Why Choose Us Section -->
 
       </div>
     </section><!-- End Team Section -->
