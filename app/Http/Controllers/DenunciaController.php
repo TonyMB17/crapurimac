@@ -86,7 +86,7 @@ class DenunciaController extends Controller
         $denuncia = Denuncia::find($id); 
         return view('admin.denuncias.answer', compact('denuncia'));
     }
-    public function checked(Request $request,$id)
+        public function checked(Request $request,$id)
     {       
                 // dd($email->message);
 
