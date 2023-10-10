@@ -85,6 +85,12 @@
                     <span>Mensajes</span></a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('users.index') }}">
+                    <i class="fa fa-user fa-fw"></i>
+                    <span>Usuarios</span></a>
+            </li>
+
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 

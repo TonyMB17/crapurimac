@@ -23,12 +23,12 @@
                 </div>
 
                 <div class="row gy-4" data-aos="fade-up">
-                    <div class="col-lg-4">
-                        <img id="borde" src="{{ asset('/assets/img/presentacion/Flag_Map_of_Apurimac.png') }}" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="content ps-lg-5">
-                            <!-- <h3>Voluptatem dignissimos provident quasi</h3> -->
+                    <img id="" src="{{ asset('/assets/img/presentacion/presentacion2.jpg') }}" class="img-fluid " alt="">
+                    <div class="col-lg-4">                        
+                        <img id="borde" src="{{ asset('/assets/img/presentacion/Flag_Map_of_Apurimac.png') }}" class="img-fluid py-5" alt="">                        
+                    </div>                    
+                    <div class="col-lg-8">                        
+                        <div class="content ps-lg-5">                            
                             <p style="text-align: justify; color:#2c2c2c">La Comisión  Regional Anticorrupción de  Apurímac, promueve la articulación entre autoridades con una visión a futuro, teniendo como actividad prioritaria cerrar los hechos de corrupción e impunidad, logrando sentar las bases institucionales y de política pública que posibilitan a las instituciones que los conforman planear y ejecutar acciones puntuales y medibles de prevención, control, fiscalización, y sanción de actos de corrupción, teniendo la consigna de incentivar una Política Regional Anticorrupción mediante la implementación de programas y planes de trabajo en la lucha contra la corrupción así como de la eficacia de las políticas diseñadas para contenerlo y eventualmente acotarlo, a través del Gobierno Regional de Apurímac, se ha creado un botón de alerta Anticorrupción que permite a los ciudadanos registrar sus denuncias de hechos de corrupción y alertar sobre la actuación gubernamental con respecto a la corrupción, es el mecanismo digital más amigable para la formulación de denuncias que permite registrarlas desde cualquier lugar, manteniendo los datos de los denunciantes de manera muy confidencial, permitirá sancionar aquellos servidores públicos que atentan contra las normas establecidas. </p>
 
                             <p style="text-align: justify; color:#2c2c2c">La corrupción también puede ser entendida como aquellas conductas que se desvían de los deberes formales de una función pública por beneficios particulares (para sí, familiares cercanos, amigos), pecuniarios, o ganancias de estatus; o violan las reglas contra el ejercicio de ciertos tipos de influencia para beneficio privado. Esto incluye conductas tales como el soborno (uso de recompensas para cambiar las decisiones de una persona); el nepotismo (concesión de apoyo por una relación estrecha en lugar del mérito) y la malversación (uso ilegal de recursos públicos para fines privados). </p>

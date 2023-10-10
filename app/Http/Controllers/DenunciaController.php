@@ -25,16 +25,6 @@ class DenunciaController extends Controller
         return $pdf->stream();        
         //
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    // public function checked($id)
-    // {
-    //     //
-       
-    // }
-
     /**
      * Store a newly created resource in storage.
      */

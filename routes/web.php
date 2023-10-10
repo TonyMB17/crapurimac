@@ -3,8 +3,8 @@
 use App\Http\Controllers\DenunciaController;
 use App\Http\Controllers\DocumentoController;
 use App\Http\Controllers\NoticiasController;
-use App\Http\Controllers\AdminController;
 use App\Http\Controllers\MensajeController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -62,15 +62,11 @@ Route::get('/denuncia', function () {
 /*
 CONTACTO
 */
-// Route::get('/contacto', function () {
-//     return view('contacto');
-// })->name('contacto');
 Route::get('/contacto', [MensajeController::class, 'show'])->name('contacto');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::resource('home/denuncias', DenunciaController::class);
-// Route::resource('mensajes', MensajeController::class);
 Route::post('mensajes', [MensajeController::class, 'store'])->name('mensajes.store');
 
 Route::group(['middleware' => 'auth'], function () {
@@ -90,4 +86,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/home/documentos', [DocumentoController::class, 'index'])->name('home.documentos');
 
     Route::get('/home/mensajes', [MensajeController::class, 'index'])->name('home.mensajes');
+
+    Route::resource('home/users', UserController::class);
 });
