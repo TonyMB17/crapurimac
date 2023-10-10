@@ -29,9 +29,9 @@
               <li><i class="bi bi-calendar-event-fill"></i>{{$noticias->created_at->format('d F Y')}}</li>
               <li><i class="bi bi-watch"></i>{{$noticias->created_at->format('g:i a')}}</li>
             </ul>
-            <a style="text-align: justify">{{$noticias->descripcion}}<br><br></a><br>            
+            <a style="text-align: justify">{{$noticias->descripcion}}<br><br></a><br>
+            <img src="{{ asset($noticias->featured) }}" class="img-fluid" alt="">
           </div>
-          <img src="{{ asset($noticias->featured) }}" class="img-fluid" alt="">
         </div>
 
         <div class="col-lg-4">
@@ -46,7 +46,7 @@
                     <span class="post-date">{{$noticias->created_at->format('d F Y')}}</span>
                     <span class="post-author"> / {{$noticias->created_at->format('g:i a')}}</span>
                   </div>
-                  <h3 class="post-title">{{$noticias->titulo}}</h3>                  
+                  <h3 class="post-title">{{$noticias->titulo}}</h3>
                 </div>
               </div>
 
