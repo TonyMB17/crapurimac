@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Mail;
 use App\Models\Denuncia;
 use App\Mail\DenunciaMail;
+use App\Mail\RespuestaMail;
 use Illuminate\Http\Request;
 use Barryvdh\DomPDF\Facade\Pdf;
 
@@ -85,13 +86,22 @@ class DenunciaController extends Controller
         $denuncia = Denuncia::find($id); 
         return view('admin.denuncias.answer', compact('denuncia'));
     }
+    public function checked(Request $request,$id)
+    {       
+                // dd($email->message);
 
-    public function checked($id)
-    {
-        //
-        $denuncia = Denuncia::find($id);  
+        $denuncia = Denuncia::find($id);
         $denuncia->estado=0;
+
+        $email = (object)[
+            'message'=> $request->input('message'),
+            'subject'=> $denuncia->fecha
+        ];
+
         $denuncia->update();
+
+        Mail::to($denuncia->correo)->send(new RespuestaMail($email));
+
         return redirect()->route('home.denuncias');
     }    
 
