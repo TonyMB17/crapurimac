@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileNavHide = document.querySelector('.mobile-nav-hide');
 
   document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
-    el.addEventListener('click', function(event) {
+    el.addEventListener('click', function (event) {
       event.preventDefault();
       mobileNavToogle();
     })
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
 
   navDropdowns.forEach(el => {
-    el.addEventListener('click', function(event) {
+    el.addEventListener('click', function (event) {
       if (document.querySelector('.mobile-nav-active')) {
         event.preventDefault();
         this.classList.toggle('active');
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   const scrollTop = document.querySelector('.scroll-top');
   if (scrollTop) {
-    const togglescrollTop = function() {
+    const togglescrollTop = function () {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
     window.addEventListener('load', togglescrollTop);
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
     speed: 600,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 3000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     speed: 600,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 3000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
@@ -163,8 +163,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       let menuFilters = document.querySelectorAll('.portfolio-isotope .portfolio-flters li');
-      menuFilters.forEach(function(el) {
-        el.addEventListener('click', function() {
+      menuFilters.forEach(function (el) {
+        el.addEventListener('click', function () {
           document.querySelector('.portfolio-isotope .portfolio-flters .filter-active').classList.remove('filter-active');
           this.classList.add('filter-active');
           portfolioIsotope.arrange({
@@ -199,19 +199,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 const el = document.getElementById('poster, poster1')
-const height  = el.clientHeight
+const height = el.clientHeight
 const width = el.clientWidth
 
 el.addEventListener('mousemove', (env) => {
-  const {layerX, layerY} = evt
+  const { layerX, layerY } = evt
 
   const yRotation = (
-    (layerX - width / 2 ) / width
-  ) * 20 
+    (layerX - width / 2) / width
+  ) * 20
 
   const xRotation = (
-    (layerY - height / 2 ) / height
-  ) * 20 
+    (layerY - height / 2) / height
+  ) * 20
 
   const string = `
     perspective(500px)
@@ -233,28 +233,50 @@ el.addEventListener('mousemove', () => {
 })
 
 
-// validaciones 
+// function validarEmail(elemento) {
 
-// function validarCorreo(correo){
-//   var expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
-//   var esValidado = expReg.test(correo);
-//   if(esValidado == true){
-//     alert('El correo electronico es Válidado');
+//   var texto = document.getElementById(elemento.id).value;
+//   var regex = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+//   var mensaje = document.getElementById("resultado");
+
+//   if (!regex.test(texto)) {
+//     mensaje.innerHTML = "Correo inválido";
+//     mensaje.className = "mensaje-invalido"; // Aplica el estilo CSS
+//   } else {
+//     mensaje.innerHTML = "Correo Válido";
+//     mensaje.className = "mensaje-valido"; // Aplica el estilo CSS
 //   }
-//   else{
-//     alert('El correo electronico NO es Válidado, Considere: example@gmail.com');
+
+// }
+
+
+// function validarDNI(elemento) {
+//   var texto = document.getElementById(elemento.id).value;
+//   var regex = /^[0-9]{8,8}$/; // Acepta solo números y un máximo de 8 dígitos
+//   var mensaje = document.getElementById("resultadoDni");
+
+//   if(!regex.test(texto)){
+//     mensaje.innerHTML = "DNI inválido";
+//     mensaje.className = "mensaje-invalido"; // Aplica el estilo CSS
+//   }else{
+//     mensaje.innerHTML = "DNI Válido";
+//     mensaje.className = "mensaje-valido"; // Aplica el estilo CSS
 //   }
 // }
 
-function validarEmail(elemento){
+// function validarTelefono(elemento) {
+//   var texto = document.getElementById(elemento.id).value;
+//   var regex = /^[0-9]{9,9}$/; // Acepta solo números y un máximo de 8 dígitos
+//   var mensaje = document.getElementById("resultadoTelefono");
 
-  var texto = document.getElementById(elemento.id).value;
-  var regex =  /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
-  
-  if (!regex.test(texto)) {
-      document.getElementById("resultado").innerHTML = "Correo invalido";
-  } else {
-    document.getElementById("resultado").innerHTML = "";
-  }
+//   if(!regex.test(texto)){
+//     mensaje.innerHTML = " Teléfono inválido";
+//     mensaje.className = "mensaje-invalido"; // Aplica el estilo CSS
+//   }else{
+//     mensaje.innerHTML = " Teléfono Válido";
+//     mensaje.className = "mensaje-valido"; // Aplica el estilo CSS
+//   }
+// }
 
-}
+
+

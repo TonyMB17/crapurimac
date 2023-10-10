@@ -25,21 +25,11 @@ class DenunciaController extends Controller
         return $pdf->stream();        
         //
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
-    {
-        Denuncia::query()->update(['estado' => 0]);
+    {      
 
         $request->validate([
             'dni' => 'required|string|max:8|min:8|regex:/^[0-9]{8}$/i',
@@ -81,14 +71,31 @@ class DenunciaController extends Controller
 
         $denuncias->save();        
 
-        return redirect()->back();
+        return redirect()->back()->with('message','Se ha registrado su denuncia.');
         //
     }
+
+    public function answer($id)
+    {
+        //
+        $denuncia = Denuncia::find($id); 
+        return view('admin.denuncias.answer', compact('denuncia'));
+    }
+
+    public function checked($id)
+    {
+        //
+        $denuncia = Denuncia::find($id);  
+        $denuncia->estado=0;
+        $denuncia->update();
+        return redirect()->route('home.denuncias');
+    }    
+
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($id)
     {
         //
     }

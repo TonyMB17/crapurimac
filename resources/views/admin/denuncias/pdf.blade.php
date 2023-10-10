@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DENUNCIA {{$denuncia->id}}</title>
+    <!-- Custom styles for this template-->
+
 </head>
 
 <body>
@@ -29,14 +31,14 @@
         </div>
         <hr>
         <div class="row text-center" style="margin-bottom: 2rem;">
-            <div class="col-xs-6">
+            <div class="col-lg-6">
                 <h3 class="h2">Denunciante</h3>
                 <span>DNI: <strong>{{$denuncia->dni}}</strong></span><br>
                 <span>NOMBRE: <strong>{{$denuncia->nombre}}</strong></span><br>
                 <span>TELEFONO: <strong>{{$denuncia->telefono}}</strong></span><br>
                 <span>EMAIL: <strong>{{$denuncia->correo}}</strong></span>
             </div>
-            <div class="col-xs-6">
+            <div class="col-lg-6">
                 <h3 class="h2">Denunciado</h3>
                 <span>NOMBRE: <strong>{{$denuncia->denunciado}}</strong></span><br>
                 <span>INSTITUCION: <strong>{{$denuncia->institucion}}</strong></span><br>

@@ -114,7 +114,7 @@
 
               </div>
 
-              <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="300" data-interval="1000">
                   <div class="swiper-wrapper">
 
                       <div class="swiper-slide">

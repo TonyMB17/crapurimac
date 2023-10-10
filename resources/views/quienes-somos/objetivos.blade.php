@@ -64,7 +64,7 @@
 
     </div>
 
-    <div class="col-lg-8">
+    <div class="col" style="text-align: justify;">
       <div class="content ps-lg-5">        
         <p>
           Son funciones de la Comisión Regional Anticorrupción de Apurímac:

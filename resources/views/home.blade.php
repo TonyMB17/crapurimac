@@ -19,9 +19,9 @@
 
     <!-- Custom styles for this template-->
     <link href="{{ asset('/assets/admin/css/sb-admin-2.min.css') }}" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Custom styles for this page -->
+    <link href="{{asset('/assets/admin/vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -83,6 +83,12 @@
                 <a class="nav-link" href="{{ route('home.mensajes') }}">
                     <i class="fas fa-fw fa-envelope-open"></i>
                     <span>Mensajes</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('users.index') }}">
+                    <i class="fa fa-user fa-fw"></i>
+                    <span>Usuarios</span></a>
             </li>
 
             <!-- Divider -->
@@ -223,6 +229,13 @@
     <!-- Page level custom scripts -->
     <script src="{{ asset('/assets/admin/js/demo/chart-area-demo.js') }}"></script>
     <script src="{{ asset('/assets/admin/js/demo/chart-pie-demo.js') }}"></script>
+
+    <!-- Page level plugins -->
+    <script src="{{ asset('/assets/admin/vendor/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('/assets/admin/vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="{{ asset('/assets/admin/js/demo/datatables-demo.js') }}"></script>
     <script>
         @if ($errors->any())
             $(document).ready(function() {

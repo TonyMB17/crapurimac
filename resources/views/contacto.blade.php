@@ -58,7 +58,7 @@
 
                   </div>
 
-                  <form action="{{ route('mensajes.store') }}" method="post" class="email-form">
+                  <form action="{{ route('mensajes.store') }}" method="POST" class="email-form">
                       @csrf
                       <div class="row">
                           <div class="col-md-6 form-group">
@@ -72,8 +72,8 @@
                               @enderror
                           </div>
                           <div class="col-md-6 form-group mt-3 mt-md-0">
-                              <input type="email" class="form-control" name="email" id="email"
-                                  placeholder="Correo" value="{{ old('correo') }}">
+                              <input type="text" class="form-control" name="email" id="email"
+                                  placeholder="Correo" value="{{ old('email') }}">
                               @error('email')
                                   <br>
                                   <span class="text-danger">
@@ -112,8 +112,8 @@
                         width: 100%;">Enviar
                               Mensaje</button>
                       </div>
-                  </form>
-
+                      @include('components.flash_alerts')
+                  </form>                  
               </div><!-- End Contact Form -->
 
           </div>
@@ -139,6 +139,6 @@
 
   </main><!-- End #main -->
 
-
+  <script src="{{ asset('/assets/js/script.js') }}"></script>
   <!-- footer -->
   @include('layout.footer')

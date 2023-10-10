@@ -45,7 +45,7 @@ class MensajeController extends Controller
         $mensajes->mensaje = $request->input('mensaje');
         $mensajes->save();
 
-        return view('contacto');
+        return redirect()->route('contacto')->with('message','Su mensaje se envio correctamente.');
         //
     }
 
@@ -55,6 +55,7 @@ class MensajeController extends Controller
     public function show()
     {        
         //
+        return view('contacto');
     }
     /**
      * Show the form for editing the specified resource.
