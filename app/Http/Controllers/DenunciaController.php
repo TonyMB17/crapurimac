@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Mail;
 use App\Models\Denuncia;
+use App\Mail\DenunciaMail;
 use Illuminate\Http\Request;
 use Barryvdh\DomPDF\Facade\Pdf;
 
@@ -69,7 +71,9 @@ class DenunciaController extends Controller
             $denuncias->file = $destinationPath . $filename;
         }
 
-        $denuncias->save();        
+        $denuncias->save();    
+        
+        Mail::to('181221@unamba.edu.pe')->send(new DenunciaMail($denuncias));
 
         return redirect()->back()->with('message','Se ha registrado su denuncia.');
         //
