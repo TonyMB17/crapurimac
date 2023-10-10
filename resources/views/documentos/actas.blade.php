@@ -15,8 +15,20 @@
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
       <div class="container" data-aos="fade-up">
-
-        <p>Aún no se publican actas.</p>
+      <div>
+          <div id="poster1" class="marco">
+            <a href="{{ asset('/assets/pdf/ACTA DE INSTALACION  C.R.A.pdf')}}" target="_blank">
+              <div class="icon-list d-flex" >
+                <div id="pdf" >
+                  <i  class="bi bi-file-earmark-pdf-fill" ></i>
+                </div >
+                <div style="display: flex; align-items:center">
+                  <span style="margin-left: 1em; color:rgb(37, 37, 37); font-size: 18px;">Acta de instalacion C.R.A.</span>
+                </div>
+              </div><!-- End Icon List Item-->
+            </a>
+          </div>
+        </div>
 
       </div>
     </section><!-- End Team Section -->
