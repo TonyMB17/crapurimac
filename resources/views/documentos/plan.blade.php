@@ -27,7 +27,7 @@
                 mayoría simple por la Comisión y su elaboración corresponde al/a la Secretario/a Técnico/a,
                 quien también es responsable del seguimiento y monitoreo.</span>
             </div>
-            <embed src="{{asset('/assets/pdf/PLAN DE ANTICORRUPCION.pdf')}}" type="application/pdf" width="420px" height="630px">
+            <embed src="{{asset('/assets/pdf/Plan Anual de Trabajo 2023 Comisión Regional Anticorrupción de Apurímac (CRA).pdf')}}" type="application/pdf" width="420px" height="630px">
           </div>
         </section><!-- End Why Choose Us Section -->
 

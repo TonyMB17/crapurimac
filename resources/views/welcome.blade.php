@@ -9,7 +9,7 @@
                   <blockquote data-aos="fade-up" data-aos-delay="100">
                       <p>Implementación de lineamientos y estándares de cumplimiento en materia de <span
                               style="color: red;"><b>integridad y lucha contra la corrupción</b></span> en el
-                          departamento de Apurimíac</p>
+                          departamento de Apurímac</p>
                   </blockquote>
                   <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
                       <a href="{{ route('presentacion') }}" class="btn-get-started">Leer Más</a>
