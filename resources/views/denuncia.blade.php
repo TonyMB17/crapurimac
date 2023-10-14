@@ -58,13 +58,6 @@
                                       </div>
                                       <div class="check fas fa-check"></div>
                                   </div>
-                                  {{-- <div class="step">
-                                      <p>Fin de <br> la Denuncia</p>
-                                      <div class="bullet">
-                                          <span>4</span>
-                                      </div>
-                                      <div class="check fas fa-check"></div>
-                                  </div> --}}
                               </div>
                               <div class="form-outer">
                                   <form action="{{ route('denuncias.store') }}" method="post"
@@ -179,7 +172,7 @@
                                           </div>
                                           <div class="field">
                                               <div class="label">Descripción de los Hechos</div>
-                                              <textarea name="descripcion" type="text" class="form-control" id="recipient-name">{{ old('descripcion') }}</textarea>
+                                              <textarea name="descripcion" type="text" class="form-control" id="recipient-name">{{old('descripcion')}}</textarea>
                                               @error('descripcion')
                                                   <br><br>
                                                   <span class="text-danger">
@@ -189,7 +182,7 @@
                                           </div>
                                           <div class="field">
                                               <div class="label">Testigos</div>
-                                              <textarea name="testigos" type="text" class="form-control" id="recipient-name">{{ old('testigos') }}</textarea>
+                                              <textarea name="testigos" type="text" class="form-control" id="recipient-name">{{old('testigos')}}</textarea>
                                               @error('testigos')
                                                   <br><br>
                                                   <span class="text-danger">

@@ -22,17 +22,17 @@ class DenunciaController extends Controller
     }
 
     public function pdf($id)
-    {    
-        $denuncia = Denuncia::find($id);  
-        $pdf = Pdf::loadView('admin.denuncias.pdf',compact('denuncia'));
-        return $pdf->stream();        
+    {
+        $denuncia = Denuncia::find($id);
+        $pdf = Pdf::loadView('admin.denuncias.pdf', compact('denuncia'));
+        return $pdf->stream();
         //
     }
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
-    {      
+    {
 
         $request->validate([
             'dni' => 'required|string|max:8|min:8|regex:/^[0-9]{8}$/i',
@@ -46,16 +46,16 @@ class DenunciaController extends Controller
             'descripcion' => 'required',
             'testigos' => 'required',
             'archivo' => 'required'
-        ], $message =[
-            'dni.regex'=>'Solo se permiten numeros',
-            'telefono.regex'=>'Solo se permiten numeros'
-            ]);
+        ], $message = [
+            'dni.regex' => 'Solo se permiten numeros',
+            'telefono.regex' => 'Solo se permiten numeros'
+        ]);
 
         $denuncias = new Denuncia;
         $denuncias->dni = $request->input('dni');
         $denuncias->nombre = $request->input('nombre');
         $denuncias->telefono = $request->input('telefono');
-        $denuncias->correo = $request->input('correo');   
+        $denuncias->correo = $request->input('correo');
         $denuncias->denunciado = $request->input('denunciado');
         $denuncias->institucion = $request->input('institucion');
         $denuncias->cargo = $request->input('cargo');
@@ -64,38 +64,38 @@ class DenunciaController extends Controller
         $denuncias->testigos = $request->input('testigos');
         $denuncias->estado = 1;
 
-        if($request->hasFile('archivo')){
-            $file=$request->file('archivo');
+        if ($request->hasFile('archivo')) {
+            $file = $request->file('archivo');
             $destinationPath = 'docs/';
             $filename = time() . '-' . $file->getClientOriginalName();
-            $file->move($destinationPath,$filename);
+            $file->move($destinationPath, $filename);
             $denuncias->file = $destinationPath . $filename;
         }
 
-        $denuncias->save();    
-        
-        Mail::to('181221@unamba.edu.pe')->send(new DenunciaMail($denuncias));
+        $denuncias->save();
 
-        return redirect()->back()->with('message','Se ha registrado su denuncia.');
+        Mail::to('comicionregionalanticorrupcion@gmail.com')->send(new DenunciaMail($denuncias));
+
+        return redirect()->back()->with('message', 'Se ha registrado su denuncia.');
         //
     }
 
     public function answer($id)
     {
         //
-        $denuncia = Denuncia::find($id); 
+        $denuncia = Denuncia::find($id);
         return view('admin.denuncias.answer', compact('denuncia'));
     }
-        public function checked(Request $request,$id)
-    {       
-                // dd($email->message);
+    public function checked(Request $request, $id)
+    {
+        // dd($email->message);
 
         $denuncia = Denuncia::find($id);
-        $denuncia->estado=0;
+        $denuncia->estado = 0;
 
         $email = (object)[
-            'message'=> $request->input('message'),
-            'subject'=> $denuncia->fecha
+            'message' => $request->input('message'),
+            'subject' => $denuncia->fecha
         ];
 
         $denuncia->update();
@@ -103,7 +103,7 @@ class DenunciaController extends Controller
         Mail::to($denuncia->correo)->send(new RespuestaMail($email));
 
         return redirect()->route('home.denuncias');
-    }    
+    }
 
 
     /**

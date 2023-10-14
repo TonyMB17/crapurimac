@@ -66,7 +66,7 @@
                     <div class="row border-bottom-success mb-4 py-4">
                         <div class="col-lg-6">
                             <h5><strong>DE:</strong></h5>
-                            <input type="email" name="email" id="recipient-name" class="form-control" value="181221@unamba.edu.pe" required disabled>
+                            <input type="email" name="email" id="recipient-name" class="form-control" value="comicionregionalanticorrupcion@gmail.com" required disabled>
                         </div>
                         <div class="col-lg-6">
                             <h5><strong>PARA:</strong></h5>
