@@ -24,8 +24,8 @@ class DenunciaController extends Controller
     public function pdf($id)
     {
         $denuncia = Denuncia::find($id);
-        $pdf = Pdf::loadView('admin.denuncias.pdf', compact('denuncia'));
-        return $pdf->stream();
+        $pdf = Pdf::loadView('admin.denuncias.pdf', compact('denuncia'));        
+        return $pdf->stream();        
         //
     }
     /**

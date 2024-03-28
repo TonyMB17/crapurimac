@@ -27,21 +27,27 @@
                         <thead>
                             <tr>
                                 <th>Titulo</th>
-                                <th>Fecha</th>
-                                <th>Opciones</th>
+                                <th width="20%">Imagen</th>
+                                <th width="10%">Fecha</th>
+                                <th width="10%">Opciones</th>
                             </tr>
                         </thead>
                         <tfoot>
                             <tr>
                                 <th>Titulo</th>
-                                <th>Fecha</th>
-                                <th>Opciones</th>
+                                <th width="20%">Imagen</th>
+                                <th width="10%">Fecha</th>
+                                <th width="10%">Opciones</th>
                             </tr>
                         </tfoot>
                         <tbody>
                             @foreach ($noticias->reverse() as $noticia)
                                 <tr>
                                     <td>{{ $noticia->titulo }}</td>
+                                    <td>
+                                        <img src="{{ asset($noticia->featured) }}" class="img-fluid card shadow h-100" width="200"
+                                                alt="">
+                                    </td>
                                     <td>{{ $noticia->created_at }}</td>
                                     <td>
                                         <button type="button" class="btn btn-success" data-toggle="modal"
