@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DenunciaController;
 use App\Http\Controllers\DocumentoController;
 use App\Http\Controllers\NoticiasController;
@@ -74,7 +75,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('noticias', NoticiasController::class);    
     Route::resource('documentos', DocumentoController::class);    
 
-    Route::get('/home', [NoticiasController::class, 'index'])->name('home');
+    Route::get('/home', [AdminController::class, 'index'])->name('home');
 
     Route::get('/home/noticias', [NoticiasController::class, 'index'])->name('home.noticias');
 

@@ -60,7 +60,7 @@ class NoticiasController extends Controller
      */
     public function show()
     {
-        $noticias = Noticias::all();
+        $noticias = Noticias::orderBy('created_at', 'desc')->limit(4)->get();
         return view('welcome', compact('noticias'));
         //
     }

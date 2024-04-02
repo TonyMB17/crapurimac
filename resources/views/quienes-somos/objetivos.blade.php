@@ -23,7 +23,7 @@
 
     <div class="row gy-5">
 
-      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-3 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
         <div class="icon flex-shrink-0"><i class="bi bi-check2-circle" style="color: #f51313;"></i></div>
         <div>
           <h4 class="title" style="color: #f51313">Objetivo 1</h4>
@@ -32,7 +32,7 @@
       </div>
       <!-- End Service Item -->
 
-      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-3 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
         <div class="icon flex-shrink-0"><i class="bi bi-check2-circle" style="color: #f51313;"></i></div>
         <div>
           <h4 class="title" style="color: #f51313">Objetivo 2</h4>
@@ -41,11 +41,20 @@
       </div>
       <!-- End Service Item -->
 
-      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-3 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
         <div class="icon flex-shrink-0"><i class="bi bi-check2-circle" style="color: #f51313;"></i></div>
         <div>
           <h4 class="title" style="color: #f51313">Objetivo 3</h4>
           <p class="description">Incentivar y difundir una cultura de valores y principios de integridad pública en el departamento de Apurímac.</p>
+        </div>
+      </div>
+      <!-- End Service Item -->
+
+      <div class="col-lg-3 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon flex-shrink-0"><i class="bi bi-check2-circle" style="color: #f51313;"></i></div>
+        <div>
+          <h4 class="title" style="color: #f51313">Objetivo 4</h4>
+          <p class="description">Establecer mecanismos para la recepción, evaluación, derivación, seguimiento y sistematización de denuncias sobre actos de corrupción.</p>
         </div>
       </div>
       <!-- End Service Item -->

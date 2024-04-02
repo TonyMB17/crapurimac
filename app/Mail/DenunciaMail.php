@@ -51,4 +51,10 @@ class DenunciaMail extends Mailable
     {
         return [];
     }
+
+    public function failed()
+    {
+        // Guardamos el mensaje de error en la sesión
+        session()->flash('error', 'Se ha producido un error al enviar el correo electrónico.');
+    }
 }

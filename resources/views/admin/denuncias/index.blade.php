@@ -18,26 +18,26 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>                                
-                                <th>Fecha</th>
+                                <th width="10%">Fecha</th>
                                 <th>Denunciante</th>
                                 <th>Denunciado</th>
                                 <th>Cargo</th>
                                 <th>Institucion</th>
-                                <th>Revisado</th>
-                                <th>Archivo</th>
-                                <th>Ver</th>
+                                <th width="10%">Revisado</th>
+                                <th width="5%">Archivo</th>
+                                <th width="5%">Ver</th>
                             </tr>
                         </thead>
                         <tfoot>
                             <tr>
-                                <th>Fecha</th>
+                                <th width="10%">Fecha</th>
                                 <th>Denunciante</th>
                                 <th>Denunciado</th>
                                 <th>Cargo</th>
                                 <th>Institucion</th>
-                                <th>Revisado</th>
-                                <th>Archivo</th>
-                                <th>Ver</th>
+                                <th width="10%">Revisado</th>
+                                <th width="5%">Archivo</th>
+                                <th width="5%">Ver</th>
                             </tr>
                         </tfoot>
                         <tbody>
@@ -66,7 +66,7 @@
                                         @endif
                                     </td>
                                     <td><a href="{{ asset('/' . $denuncia->file) }}" target="_blank">
-                                            <button type="button" class="btn btn-light">
+                                            <button type="button" class="btn btn-secondary">
                                                 <span class="material-symbols-outlined">
                                                     description
                                                 </span>
@@ -74,7 +74,7 @@
                                         </a>
                                     </td>
                                     <td> <a href="{{ route('home.denuncias.pdf', $denuncia->id) }}" target="_blank">
-                                            <button type="button" class="btn btn-light">
+                                            <button type="button" class="btn btn-info">
                                                 <span class="material-symbols-outlined">
                                                     visibility
                                                 </span>

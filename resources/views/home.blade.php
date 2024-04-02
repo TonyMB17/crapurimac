@@ -139,8 +139,10 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span
-                                    class="mr-2 d-none d-lg-inline text-gray-600 small">{{ Auth::user()->name }}</span>
+                                <span class="mr-2 d-none d-lg-inline small btn-sm btn-primary shadow-sm">                                    
+                                    <i class="fa fa-user-circle fa-md fa-fw"></i>
+                                    {{ Auth::user()->name }}
+                                </span>
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -148,6 +150,10 @@
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Cerrar Sesion
+                                </a>
+                                <a class="dropdown-item" href=" {{ route('Inicio') }} " target="_blank">
+                                    <i class="fa fa-reply fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Ir a la Plataforma
                                 </a>
 
                             </div>
@@ -227,8 +233,8 @@
     <script src="{{ asset('/assets/admin/vendor/chart.js/Chart.min.js') }}"></script>
 
     <!-- Page level custom scripts -->
-    <script src="{{ asset('/assets/admin/js/demo/chart-area-demo.js') }}"></script>
-    <script src="{{ asset('/assets/admin/js/demo/chart-pie-demo.js') }}"></script>
+    {{-- <script src="{{ asset('/assets/admin/js/demo/chart-area-demo.js') }}"></script>
+    <script src="{{ asset('/assets/admin/js/demo/chart-pie-demo.js') }}"></script> --}}
 
     <!-- Page level plugins -->
     <script src="{{ asset('/assets/admin/vendor/datatables/jquery.dataTables.min.js') }}"></script>
@@ -236,6 +242,9 @@
 
     <!-- Page level custom scripts -->
     <script src="{{ asset('/assets/admin/js/demo/datatables-demo.js') }}"></script>
+
+    @yield('scripts')
+
     <script>
         @if ($errors->any())
             $(document).ready(function() {

@@ -30,7 +30,7 @@
                                 <th>#</th>
                                 <th>Nombre</th>
                                 <th>Email</th>
-                                <th>Opciones</th>
+                                <th width="10%">Opciones</th>
                             </tr>
                         </thead>
                         <tfoot>
@@ -38,7 +38,7 @@
                                 <th>#</th>
                                 <th>Nombre</th>
                                 <th>Email</th>
-                                <th>Opciones</th>
+                                <th width="10%">Opciones</th>
                             </tr>
                         </tfoot>
                         <tbody>

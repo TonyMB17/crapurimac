@@ -26,15 +26,15 @@
                         <thead>
                             <tr>
                                 <th>Nombre</th>
-                                <th>Fecha</th>
-                                <th>Opciones</th>
+                                <th width="30%">Fecha</th>
+                                <th width="15%">Opciones</th>
                             </tr>
                         </thead>
                         <tfoot>
                             <tr>
                                 <th>Nombre</th>
-                                <th>Fecha</th>
-                                <th>Opciones</th>
+                                <th width="30%">Fecha</th>
+                                <th width="15%">Opciones</th>
                             </tr>
                         </tfoot>
                         <tbody>
@@ -56,7 +56,7 @@
                                             </span>
                                         </button>
                                         <a href="{{ asset('/' . $documento->file) }}" target="_blank">
-                                            <button type="button" class="btn btn-light">
+                                            <button type="button" class="btn btn-info">
                                                 <span class="material-symbols-outlined">
                                                     visibility
                                                 </span>
