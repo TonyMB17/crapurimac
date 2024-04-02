@@ -74,7 +74,7 @@ class DenunciaController extends Controller
 
         $denuncias->save();    
         
-        Mail::to('181221@unamba.edu.pe')->send(new DenunciaMail($denuncias));
+        Mail::to('Anticorrupcionapurimac@regionapurimac.gob.pe')->send(new DenunciaMail($denuncias));
 
         return redirect()->back()->with('message','Se ha registrado su denuncia.');
         //
@@ -86,6 +86,7 @@ class DenunciaController extends Controller
         $denuncia = Denuncia::find($id); 
         return view('admin.denuncias.answer', compact('denuncia'));
     }
+    
     public function checked(Request $request,$id)
     {       
                 // dd($email->message);
